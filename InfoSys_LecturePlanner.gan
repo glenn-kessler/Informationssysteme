@@ -4,7 +4,7 @@
         <field id="tpd3" name="Vorgang" width="333" order="0"/>
         <field id="tpd4" name="Anfang" width="68" order="1"/>
         <field id="tpd5" name="Ende" width="147" order="2"/>
-        <timeline><![CDATA[2,1,5,4,3]]></timeline>
+        <timeline><![CDATA[5,3,4,2,1]]></timeline>
         <option id="color.recent"><![CDATA[#ff9999 #cc99ff #9933ff #ff3300]]></option>
     </view>
     <view id="resource-table">
@@ -50,7 +50,7 @@
         </task>
         <task id="16" name="documentation of group structure" color="#8cb6ce" meeting="false" start="2016-10-03" duration="1" complete="100" expand="true"/>
         <task id="18" name="mission statement &amp; mission objectives" color="#cc99ff" meeting="false" start="2016-10-04" duration="11" complete="20" expand="true"/>
-        <task id="20" name="time schedule" color="#8cb6ce" meeting="false" start="2016-10-07" duration="1" complete="0" expand="true"/>
+        <task id="20" name="time schedule" color="#8cb6ce" meeting="false" start="2016-10-07" duration="1" complete="40" expand="true"/>
         <task id="22" name="user views (use cases)" color="#8cb6ce" meeting="false" start="2016-10-07" duration="8" complete="0" expand="true"/>
         <task id="24" name="list of requirements (structured, sorted, numbered)" color="#ff9999" meeting="false" start="2016-10-05" duration="10" complete="15" expand="true">
             <notes><![CDATA[2016-10-06
