@@ -1,0 +1,101 @@
+ 1. Strict application of the Database System Development Lifecycle to ensure efficiency of development and to avoid data redundancy.
+ 1. Anwendung des Datenbankensystementwicklungs Lifecycle um eine effizienten Entwicklungsprozess zu gewährleisten, sowie um Redundanz zu vermeiden.
+ 
+ 2. Strict separation of database, database applicationand GUI
+ 2. Strenge Teilung zwischen Datenbank und Grafischem Benutzerinterface
+ 
+ 3. All data, constraints and business rules are stored in the database (application).
+ 3. Alle Daten, Einschränkungen, und Geschäftsregeln(?) werden in der Datenbankanwendung gespeichert
+ 
+ 4. The GUI provides means for data access and input only.
+ 4. Das Grafische Benutzerinterface stellt ausschließlich die Daten zum Lesen und Schreiben zur Verfügung.
+ 
+ 5. Implementation of the following business processes.
+ 5. Der folgende Prozess soll umgesetzt werden
+ 
+ 6. The examination regulations define which modules have to be offered. Note that not all lectures are defined in the examination regulations (e.g. Wahlfach X, elective X).
+ 6. Die Prüfungsordnung definiert die anzubietenden Module. Achtung. Nicht alle Fächer werden darin aufgeführt (zB Wahlfächer usw.)
+ 
+ 7. Modules can consist out of various elements (lectures, labs, projects, …) having a certain number of weekly semester hours (SWS).
+ 7. Module können aus mehreren verschieden ELementen bestehen: Vorlesungen, Labore, Projekte, die eine Anzahl an Wochenstunden (SWS) aufweisen.
+  
+ 8. Each module element is taught by professors and/or external lecturers (Lehrbeauftragte).
+ 8. Jedes Modul wird von Professoren und/oder von externen Lehrbeauftragten unterrichtet
+ 
+ 9. A semester group may be split into various teaching groups (e.g. IT3A, IT3B) and sub-groups (e.g. lab groups 1 and 2 of IT3A).
+ 9. Eine Semstergruppe kann in verschieden Unterrichtsgruppen unterteilt werden. Diese können wiederum in Untergruppen unterteilt werden.
+ 
+10. Two groups may share the same lecture (e.g. SWT, SWM share Databases 2) having different names for the groups.
+10. Zwei Gruppen können sich eine Vorlesung teilen
+
+11. A lecturer cannot be professor and external lecturer at the same time. However, an external lecturer can become a professor and a professor can become an external lecturer after reaching his pension age.
+11. Ein Dozent kann nicht Professor und Externer Lehrbeauftragter gleichzeitg sein. Er kann aber zwischen diesen Rollen wechseln.
+
+12. An external lecturer is associated to a specific department (Fakultät). 
+12. Externer Lehrbeauftragter ist einer bestimmten Fakultät zugeordnet
+
+13. A module element has a certain number of SWS assigned in the examination regulations. The number of hours in the time schedule and the number of SWS as work-load of the lecturer might be different to those, e.g. DB2 Project: Student SWS = 2, Lecturer SWS = 1, hours in time schedule = 0.
+13. Einem Modul sind eine bestimmte Menge an SWS zugeordnet. Diese kann für Studenten (2SWS) und Professoren (1SWS) unterschiedlich sein.
+
+14. Professors have to work a certain amount of SWS each semester. The work can be teaching or assigned tasks (dean, running a lab room, research, …).
+14. Professoren müssen pro Semster eine bestimmte Anzahl an SWS erbringen. Dies kann durch Lehrveranstaltungen, Dekanatsarbeit, Laborbetreuung, usw. erfolgen.
+
+15. Currently each full time professor has to work 18 SWS on average (required work load = Deputat). The assigned number of SWS per semester might be higher or lower but not below 9 SWS.
+15. Jeder Vollzeitprofessor hat eine Deputatswochenstunden von wöchentlich 18 SWS. Die zugeordnete Menge an SWS pro Semester kann höher, oder niedriger sein, aber mindestens 9 SWS.
+
+16. Professors might work part-time, be ill for a longer time or be on sabbatical.
+16. Professoren können in Teilzeit arbeiten, krank sein, oder ein Sabbatical haben.
+
+17. External lecturers do not have a required work load and cannot take other assigned tasks.
+17. Externe Lehrbeauftragte haben keine minimale Anzahl an Deputatswochenstunden, und können keine andere Tätigkeit als "Lehre" übernehmen.
+
+18. The application has to document the work load of each professor over the years.
+18. Die Anwendung soll die Arbeitslast pro Professor über die Jahre erfassen. (Zeitkonto)
+
+19. List of each task of each professor for a selected semester also giving the total work load balance (Stundenkontostand – accumulated real work load versus required work load (Deputat))
+19. Eine Auflistung aller Aufgaben eines Professors pro Semester. Ausserdem Anzeigen der Gesamtstundenanzahl des Deputats im Vergleich zu den geleisteten Stunden.
+
+20. List of module elements offered in a selected academic half year for a selected degree (Studiengang)
+20. Eine Auflistung der je Stuiengang angebotenen Module für das Semester.
+
+21. List of external lecturers, their SWS for a selected academic half year and their addresses
+21. Eine Auflistung der Externen Lehrbeauftragten, sowie ihrer SWS für ein Semester und ihrer Adressen.
+
+22. List of services provided, i.e. list of module elements taught by IT professors for a different department (name of module element, name of the lecturer, SWS, department which the service is provided for)
+22. Eine Auflistung der Leistungen die von Angestellten der Fakultät IT den anderen Fakultäten angeboten werden.  zB Mathematik wird von Professoren aus der Fakultät Naturwissenschaften unterrichtet in IT, Maschinenbau, usw.
+
+23. List of services used, i.e. list of module elements taught to IT students by a lecturer of another department (name of module element, name of the lecturer, SWS, department which the service is provided by)
+23. Eine Auflistung der Leistungen die von Angestellten anderer Fakultäten der Fakultät IT angeboten wird.
+
+24. The GUI, to be designed with MS Access, serves the only purpose to insert, update, access and delete data.
+24. Das grafische Benutzerinterface soll ausschliesslich zum eingeben, aktualisieren, lesen und löschen von daten dienen.
+
+25. The GUI must not implement any data constraints.
+25. Das grafische Benutzerinterface prüft nicht die Datenintegrität.
+
+26. The data model, constraints and business logic in the database must be designed to forbid any inconsistent data.
+26. Das Datenmodell, sowie die Datenintegrität und Business Logik müssen so designed sein das Inkosistenz nicht möglich ist.
+
+27. The data model has to be implemented with the modelling tool Innovator.
+27. Das Datenmodell muss mit Innovator erstellt werden.
+
+28. Each modelling element (entity, role, constraint) has to have a description defining the meaning of the entity precisely to avoid misunderstandings.
+	Example: Possible definitions for entity „Semester“
+	1. „Identification of a specific academic half year, e.g. wintersemester 2012/13.“
+	2. „Identification of a generic academic half year and all its modules according to the examination regulations, e.g. 6th semester of Softwaretechnik (SWT6).“
+	3. „Group of students having to take the same lectures as stipulated in the examination regulations (e.g. student group SWB6).“
+28. Jedes Modellierungselement (entity, role, constraint) benötigt eine eindeutige Beschreibung.
+
+29. The language of the application (data model, GUI) is German.
+29. Die Sprache der Anwendung ist Deutsch.
+
+OPTIONAL
+30. Business process „schedule planning“: The application can be used to plan the time and room to be reserved for a module element.
+30. Geschäftsprozess: Zeitplanung d.h. die Anwendung kann verwndet werden um Zeit und Raumreservierung für ein bestimmtes Modul zu planen.
+
+31. Business process „schedule reporting“: For a given week, a schedule for a room or a group of students is presented.
+31. Geschäftsprozess: Zeitplan ausgeben d.h. die Anwendung kann den Plan für eine Woche für einen Raum, oder eine Gruppe Studenten ausgeben.
+
+
+
+
