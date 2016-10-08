@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><project name="InfoSys LecturePlanner" company="" webLink="http://" view-date="2016-09-26" view-index="0" gantt-divider-location="554" resource-divider-location="300" version="2.8.1" locale="de">
     <description/>
     <view zooming-state="default:5" id="gantt-chart">
-        <field id="tpd3" name="Vorgang" width="333" order="0"/>
-        <field id="tpd4" name="Anfang" width="68" order="1"/>
+        <field id="tpd3" name="Vorgang" width="334" order="0"/>
+        <field id="tpd4" name="Anfang" width="69" order="1"/>
         <field id="tpd5" name="Ende" width="147" order="2"/>
-        <timeline><![CDATA[5,3,4,2,1]]></timeline>
+        <timeline><![CDATA[4,1,2,5,3]]></timeline>
         <option id="color.recent"><![CDATA[#ff9999 #cc99ff #9933ff #ff3300]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Ressource" width="209" order="0"/>
-        <field id="1" name="Rolle" width="85" order="1"/>
+        <field id="0" name="Ressource" width="210" order="0"/>
+        <field id="1" name="Rolle" width="86" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -57,6 +57,7 @@
 requirements sichten, übersetzen, diskutieren, einschätzen
 bisher Zwei perosnen, a 2,5 h
 Anna, Glenn]]></notes>
+            <depend id="25" type="1" difference="0" hardness="Strong"/>
         </task>
         <task id="2" name="M2" color="#8cb6ce" meeting="true" start="2016-11-09" duration="0" complete="0" expand="true">
             <notes><![CDATA[1. conceptual data model on paper (Chen notation)
@@ -89,6 +90,7 @@ Anna, Glenn]]></notes>
 2. MS Access project
 3. SQL-code for data loading
 4. list of successful and failed test cases]]></notes>
+            <depend id="25" type="3" difference="0" hardness="Strong"/>
             <depend id="44" type="3" difference="0" hardness="Strong"/>
             <depend id="45" type="3" difference="0" hardness="Strong"/>
             <depend id="46" type="3" difference="0" hardness="Strong"/>
@@ -101,7 +103,7 @@ Anna, Glenn]]></notes>
         <task id="5" name="M5" color="#8cb6ce" meeting="true" start="2017-01-11" duration="0" complete="0" expand="true">
             <notes><![CDATA[jetzt wirds eng]]></notes>
         </task>
-        <task id="25" name="formulate questions towards customer" meeting="false" start="2016-09-28" duration="1" complete="0" expand="true"/>
+        <task id="25" name="formulate questions towards customer" color="#ff9999" meeting="false" start="2016-10-05" duration="55" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
