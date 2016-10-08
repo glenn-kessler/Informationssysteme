@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="InfoSys LecturePlanner" company="" webLink="http://" view-date="2016-10-04" view-index="0" gantt-divider-location="354" resource-divider-location="300" version="2.8.1" locale="de_DE">
+    <description/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Vorgang" width="199" order="0"/>
+        <field id="tpd4" name="Anfang" width="75" order="1"/>
+        <field id="tpd5" name="Ende" width="74" order="2"/>
+        <timeline><![CDATA[3,4,2,1,5]]></timeline>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Ressource" width="209" order="0"/>
+        <field id="1" name="Rolle" width="85" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="InfoSys LecturePlanner Entwicklung" color="#8cb6ce" meeting="false" start="2016-09-28" duration="61" complete="0" priority="3" expand="true"/>
+        <task id="1" name="M1" color="#8cb6ce" meeting="true" start="2016-10-19" duration="0" complete="0" expand="true">
+            <notes><![CDATA[1. documentation of group structure
+2. mission statement & mission objectives
+3. time schedule
+4. user views (use cases)
+5. list of requirements (structured, sorted, numbered)]]></notes>
+            <depend id="18" type="3" difference="0" hardness="Strong"/>
+            <depend id="22" type="3" difference="0" hardness="Strong"/>
+            <depend id="24" type="3" difference="0" hardness="Strong"/>
+        </task>
+        <task id="16" name="documentation of group structure" color="#8cb6ce" meeting="false" start="2016-10-03" duration="1" complete="100" expand="true"/>
+        <task id="18" name="mission statement &amp; mission objectives" color="#8cb6ce" meeting="false" start="2016-10-04" duration="11" complete="20" expand="true"/>
+        <task id="20" name="time schedule" color="#8cb6ce" meeting="false" start="2016-10-07" duration="1" complete="0" expand="true"/>
+        <task id="22" name="user views (use cases)" color="#8cb6ce" meeting="false" start="2016-10-07" duration="8" complete="0" expand="true"/>
+        <task id="24" name="list of requirements (structured, sorted, numbered)" color="#8cb6ce" meeting="false" start="2016-10-05" duration="10" complete="0" expand="true"/>
+        <task id="2" name="M2" color="#8cb6ce" meeting="true" start="2016-11-09" duration="0" complete="0" expand="true">
+            <notes><![CDATA[1. conceptual data model on paper (Chen notation)
+2. list of all relevant entities and relationships for each user view]]></notes>
+        </task>
+        <task id="3" name="M3" color="#8cb6ce" meeting="true" start="2016-11-30" duration="0" complete="0" expand="true">
+            <notes><![CDATA[1. conceptual data model in CASE-tool
+2. logical data model
+3. proof that all relations are in BCNF or explanation why not]]></notes>
+        </task>
+        <task id="4" name="M4" color="#8cb6ce" meeting="true" start="2016-12-21" duration="0" complete="0" expand="true">
+            <notes><![CDATA[1. all SQL code
+2. MS Access project
+3. SQL-code for data loading
+4. list of successful and failed test cases]]></notes>
+        </task>
+        <task id="5" name="M5" color="#8cb6ce" meeting="true" start="2017-01-11" duration="0" complete="0" expand="true">
+            <notes><![CDATA[jetzt wirds eng]]></notes>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
