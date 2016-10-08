@@ -4,7 +4,7 @@
         <field id="tpd3" name="Vorgang" width="414" order="0"/>
         <field id="tpd4" name="Anfang" width="81" order="1"/>
         <field id="tpd5" name="Ende" width="181" order="2"/>
-        <timeline><![CDATA[2,5,4,3,1]]></timeline>
+        <timeline><![CDATA[5,2,4,3,1]]></timeline>
         <option id="color.recent"><![CDATA[#ff9999 #cc99ff #9933ff #ff3300]]></option>
     </view>
     <view id="resource-table">
@@ -75,7 +75,6 @@ Anna, Glenn]]></notes>
             <notes><![CDATA[jetzt wirds eng]]></notes>
         </task>
         <task id="25" name="formulate questions towards customer" meeting="false" start="2016-09-28" duration="1" complete="0" expand="true"/>
-        <task id="26" name="Vorgang_26" meeting="false" start="2016-09-28" duration="1" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
