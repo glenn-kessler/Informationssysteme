@@ -1,0 +1,23 @@
+ 1. Was ist ein Kooptierter Professor ?
+ 1. a) Aufgaben? Unterrichten, Labore, Projekte, Prodekan, Studiendekan
+ 
+ 2. Was ist ein Studiendekan
+ 
+ 3. Was ist ein Prodekan
+ 
+ 4. sollen die Studenten sich selber Kurse/Module zuweisen können?
+ 4. a) sollen Studenten ausschließlich lesenden Zugriff haben?
+ 4. b) was passiert wenn ein Student sich zu einer Prüfung anmeldet? Ist das noch Bestandteil unserer Aufgabe?
+ 
+ 5. Sollen andere Fakultäten abgebildet werden können?
+ 5. a) Ist beispielsweie Herr Koch als Professor der Fakültät Naturwissenschaften für die Fakultät IT ein externer Lehrbeauftragter?
+ 
+ 6. Wie ist die Verfügbarkeit von Zeit im Sommer zum Winter zu berücksichtigen?
+ 
+ 7. Teilzeit, ist gestaffelt? Wenn ja, in welchen Schritten? 90%, 80%, usw. ?
+ 
+ 8. (Req.29) Das data model + GUI sollen in Deutsch verfasst sein, gilt dies auch für die Dokumentation?
+
+ 9. (Req.6) Muss das System ermöglichen andere als in der StuPo aufgeführte Fächer anzubieten
+
+10. Muss das System die Raumgröße in Abhängigkeit der Gruppengröße (Raumkapazität) bei der Planung eines Moduls berücksichtigen? 
