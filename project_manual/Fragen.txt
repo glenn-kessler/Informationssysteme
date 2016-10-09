@@ -19,3 +19,5 @@
  8. (Req.29) Das data model + GUI sollen in Deutsch verfasst sein, gilt dies auch für die Dokumentation?
 
  9. (Req.6) Muss das System ermöglichen andere als in der StuPo aufgeführte Fächer anzubieten
+
+10. Muss das System die Raumgröße in Abhängigkeit der Gruppengröße (Raumkapazität) bei der Planung eines Moduls berücksichtigen? 
