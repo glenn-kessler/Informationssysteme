@@ -13,4 +13,13 @@ stakeholder/User Views:
 
 
 mission objectives:
+- Planung von Modulen, Dozenten und Räumen (Studentengruppen) 
 
+- Ausgabe der Deputatsstunden über die letzten 3 Jahre von Professoren und externen Dozenten.
+
+- Stammdaten bearbeiten (löschen, hinzufügen, verändern)
+	- Hinzufügen neuer Dozenten
+
+- keine Redundanzen
+
+- 
