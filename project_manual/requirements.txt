@@ -1,7 +1,7 @@
-﻿Main Requirements
+Main Requirements
 Kernanforderungen
  
-1. Strict application of the Database System Development Lifecycle to ensure efficiency of development and to avoid data redundancy.
+ 1. Strict application of the Database System Development Lifecycle to ensure efficiency of development and to avoid data redundancy.
  1. Anwendung des Datenbankensystementwicklungs Lifecycle um einen effizienten Entwicklungsprozess zu gewährleisten, sowie um Redundanz zu vermeiden.
  d.h. es wird auf dem DBMS gearbeitet
  Lifecycle heisst zB Datentypen hinzufügen,entfernen usw.
