@@ -1,12 +1,16 @@
  1. Strict application of the Database System Development Lifecycle to ensure efficiency of development and to avoid data redundancy.
- 1. Anwendung des Datenbankensystementwicklungs Lifecycle um eine effizienten Entwicklungsprozess zu gewährleisten, sowie um Redundanz zu vermeiden.
+ 1. Anwendung des Datenbankensystementwicklungs Lifecycle um einen effizienten Entwicklungsprozess zu gewährleisten, sowie um Redundanz zu vermeiden.
+ d.h. es wird auf dem DBMS gearbeitet
+ Lifecycle heisst zB Datentypen hinzufügen,entfernen usw.
  
  2. Strict separation of database, database applicationand GUI
  2. Strenge Teilung zwischen Datenbank und Grafischem Benutzerinterface
  
  3. All data, constraints and business rules are stored in the database (application).
  3. Alle Daten, Einschränkungen, und Geschäftsregeln(?) werden in der Datenbankanwendung gespeichert
- 
+  business rules : das DBMS arbeitet mit den Daten, nicht das Backend oder die GUI
+  constraints : geben an wann Daten valide sind zB welcher Datentyp für Zahlen gültig ist, welcher Wertebereich, usw.
+
  4. The GUI provides means for data access and input only.
  4. Das Grafische Benutzerinterface stellt ausschließlich die Daten zum Lesen und Schreiben zur Verfügung.
  
@@ -95,7 +99,3 @@ OPTIONAL
 
 31. Business process schedule reporting: For a given week, a schedule for a room or a group of students is presented.
 31. Geschäftsprozess: Zeitplan ausgeben d.h. die Anwendung kann den Plan für eine Woche für einen Raum, oder eine Gruppe Studenten ausgeben.
-
-
-
-

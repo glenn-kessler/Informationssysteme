@@ -16,4 +16,6 @@
  
  7. Teilzeit, ist gestaffelt? Wenn ja, in welchen Schritten? 90%, 80%, usw. ?
  
- 8. Das data model + GUI sollen in Deutsch verfasst (Req.29) sein, gilt dies auch für die Dokumentation?
+ 8. (Req.29) Das data model + GUI sollen in Deutsch verfasst sein, gilt dies auch für die Dokumentation?
+
+ 9. (Req.6) Muss das System ermöglichen andere als in der StuPo aufgeführte Fächer anzubieten
