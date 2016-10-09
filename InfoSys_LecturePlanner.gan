@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="InfoSys LecturePlanner" company="" webLink="http://" view-date="2016-09-19" view-index="0" gantt-divider-location="554" resource-divider-location="300" version="2.8.1" locale="de">
+<?xml version="1.0" encoding="UTF-8"?><project name="InfoSys LecturePlanner" company="" webLink="http://" view-date="2016-09-19" view-index="0" gantt-divider-location="554" resource-divider-location="300" version="2.8.1" locale="de_DE">
     <description/>
     <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd3" name="Vorgang" width="334" order="0"/>
@@ -37,8 +37,11 @@
         </taskproperties>
         <task id="0" name="InfoSys LecturePlanner Entwicklung" color="#8cb6ce" meeting="false" start="2016-09-28" duration="61" complete="0" priority="3" expand="true"/>
         <task id="48" name="preparation for M1" color="#000000" meeting="false" start="2016-10-03" duration="12" complete="15" expand="true">
-            <notes><![CDATA[2016-10-09
-meeting: Anna, Marvin, Glenn
+            <notes><![CDATA[2016-10-09 Meeting
+Anna, Marvin, Glenn
+GanttProject and GitHub install for Anna 
+mission statement and mission objectives
+Innovator validieren 
 Koordinieren bzgl. Nutzung von ganttproject, git und github]]></notes>
             <task id="51" name="documentation of group structure" color="#8cb6ce" meeting="false" start="2016-10-03" duration="1" complete="100" expand="true"/>
             <task id="52" name="mission statement &amp; mission objectives" color="#cc99ff" meeting="false" start="2016-10-04" duration="11" complete="20" expand="true"/>

@@ -1,5 +1,6 @@
- ÄNDERUNG
-
+Main Requirements
+Kernanforderungen
+ 
  1. Strict application of the Database System Development Lifecycle to ensure efficiency of development and to avoid data redundancy.
  1. Anwendung des Datenbankensystementwicklungs Lifecycle um einen effizienten Entwicklungsprozess zu gewährleisten, sowie um Redundanz zu vermeiden.
  d.h. es wird auf dem DBMS gearbeitet
@@ -18,6 +19,33 @@
  
  5. Implementation of the following business processes.
  5. Der folgende Prozess soll umgesetzt werden
+
+24. The GUI, to be designed with MS Access, serves the only purpose to insert, update, access and delete data.
+24. Das grafische Benutzerinterface soll ausschliesslich zum eingeben, aktualisieren, lesen und löschen von daten dienen.
+
+25. The GUI must not implement any data constraints.
+25. Das grafische Benutzerinterface prüft nicht die Datenintegrität.
+
+26. The data model, constraints and business logic in the database must be designed to forbid any inconsistent data.
+26. Das Datenmodell, sowie die Datenintegrität und Business Logik müssen so designed sein das Inkosistenz nicht möglich ist.
+
+27. The data model has to be implemented with the modelling tool Innovator.
+27. Das Datenmodell muss mit Innovator erstellt werden.
+
+28. Each modelling element (entity, role, constraint) has to have a description defining the meaning of the entity precisely to avoid misunderstandings.
+	Example: Possible definitions for entity Semester
+	1. Identification of a specific academic half year, e.g. wintersemester 2012/13.
+	2. Identification of a generic academic half year and all its modules according to the examination regulations, e.g. 6th semester of Softwaretechnik (SWT6).
+	3. Group of students having to take the same lectures as stipulated in the examination regulations (e.g. student group SWB6).
+28. Jedes Modellierungselement (entity, role, constraint) benötigt eine eindeutige Beschreibung.
+
+29. The language of the application (data model, GUI) is German.
+29. Die Sprache der Anwendung ist Deutsch.
+
+
+Main Requirements – Business Process
+„Lecture Planning“
+
  
  6. The examination regulations define which modules have to be offered. Note that not all lectures are defined in the examination regulations (e.g. Wahlfach X, elective X).
  6. Die Prüfungsordnung definiert die anzubietenden Module. Achtung. Nicht alle Fächer werden darin aufgeführt (zB Wahlfächer usw.)
@@ -43,6 +71,11 @@
 13. A module element has a certain number of SWS assigned in the examination regulations. The number of hours in the time schedule and the number of SWS as work-load of the lecturer might be different to those, e.g. DB2 Project: Student SWS = 2, Lecturer SWS = 1, hours in time schedule = 0.
 13. Einem Modul sind eine bestimmte Menge an SWS zugeordnet. Diese kann für Studenten (2SWS) und Professoren (1SWS) unterschiedlich sein.
 
+
+Main Requirements – Business Process
+„Work Load Documentation“
+
+
 14. Professors have to work a certain amount of SWS each semester. The work can be teaching or assigned tasks (dean, running a lab room, research, ).
 14. Professoren müssen pro Semster eine bestimmte Anzahl an SWS erbringen. Dies kann durch Lehrveranstaltungen, Dekanatsarbeit, Laborbetreuung, usw. erfolgen.
 
@@ -57,6 +90,11 @@
 
 18. The application has to document the work load of each professor over the years.
 18. Die Anwendung soll die Arbeitslast pro Professor über die Jahre erfassen. (Zeitkonto)
+
+
+Main Requirements – Business Process
+„Report Generation“
+
 
 19. List of each task of each professor for a selected semester also giving the total work load balance (Stundenkontostand  accumulated real work load versus required work load (Deputat))
 19. Eine Auflistung aller Aufgaben eines Professors pro Semester. Ausserdem Anzeigen der Gesamtstundenanzahl des Deputats im Vergleich zu den geleisteten Stunden.
@@ -73,29 +111,8 @@
 23. List of services used, i.e. list of module elements taught to IT students by a lecturer of another department (name of module element, name of the lecturer, SWS, department which the service is provided by)
 23. Eine Auflistung der Leistungen die von Angestellten anderer Fakultäten der Fakultät IT angeboten wird.
 
-24. The GUI, to be designed with MS Access, serves the only purpose to insert, update, access and delete data.
-24. Das grafische Benutzerinterface soll ausschliesslich zum eingeben, aktualisieren, lesen und löschen von daten dienen.
+OPTIONAL Main Requirements
 
-25. The GUI must not implement any data constraints.
-25. Das grafische Benutzerinterface prüft nicht die Datenintegrität.
-
-26. The data model, constraints and business logic in the database must be designed to forbid any inconsistent data.
-26. Das Datenmodell, sowie die Datenintegrität und Business Logik müssen so designed sein das Inkosistenz nicht möglich ist.
-
-27. The data model has to be implemented with the modelling tool Innovator.
-27. Das Datenmodell muss mit Innovator erstellt werden.
-
-28. Each modelling element (entity, role, constraint) has to have a description defining the meaning of the entity precisely to avoid misunderstandings.
-	Example: Possible definitions for entity Semester
-	1. Identification of a specific academic half year, e.g. wintersemester 2012/13.
-	2. Identification of a generic academic half year and all its modules according to the examination regulations, e.g. 6th semester of Softwaretechnik (SWT6).
-	3. Group of students having to take the same lectures as stipulated in the examination regulations (e.g. student group SWB6).
-28. Jedes Modellierungselement (entity, role, constraint) benötigt eine eindeutige Beschreibung.
-
-29. The language of the application (data model, GUI) is German.
-29. Die Sprache der Anwendung ist Deutsch.
-
-OPTIONAL
 30. Business process schedule planning: The application can be used to plan the time and room to be reserved for a module element.
 30. Geschäftsprozess: Zeitplanung d.h. die Anwendung kann verwndet werden um Zeit und Raumreservierung für ein bestimmtes Modul zu planen.
 
