@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="InfoSys LecturePlanner" company="" webLink="http://" view-date="2016-09-26" view-index="0" gantt-divider-location="554" resource-divider-location="300" version="2.8.1" locale="de">
+<?xml version="1.0" encoding="UTF-8"?><project name="InfoSys LecturePlanner" company="" webLink="http://" view-date="2016-09-19" view-index="0" gantt-divider-location="554" resource-divider-location="300" version="2.8.1" locale="de">
     <description/>
-    <view zooming-state="default:5" id="gantt-chart">
-        <field id="tpd3" name="Vorgang" width="334" order="0"/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Vorgang" width="333" order="0"/>
         <field id="tpd4" name="Anfang" width="69" order="1"/>
-        <field id="tpd5" name="Ende" width="147" order="2"/>
-        <timeline><![CDATA[4,1,2,5,3]]></timeline>
+        <field id="tpd5" name="Ende" width="146" order="2"/>
+        <timeline><![CDATA[56,5]]></timeline>
         <option id="color.recent"><![CDATA[#ff9999 #cc99ff #9933ff #ff3300]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Ressource" width="210" order="0"/>
-        <field id="1" name="Rolle" width="86" order="1"/>
+        <field id="0" name="Ressource" width="209" order="0"/>
+        <field id="1" name="Rolle" width="85" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -36,70 +36,78 @@
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
         <task id="0" name="InfoSys LecturePlanner Entwicklung" color="#8cb6ce" meeting="false" start="2016-09-28" duration="61" complete="0" priority="3" expand="true"/>
-        <task id="1" name="M1" color="#8cb6ce" meeting="true" start="2016-10-19" duration="0" complete="0" expand="true">
-            <notes><![CDATA[1. documentation of group structure
+        <task id="48" name="preparation for M1" meeting="false" start="2016-10-03" duration="12" complete="15" expand="true">
+            <task id="51" name="documentation of group structure" color="#8cb6ce" meeting="false" start="2016-10-03" duration="1" complete="100" expand="true"/>
+            <task id="52" name="mission statement &amp; mission objectives" color="#cc99ff" meeting="false" start="2016-10-04" duration="11" complete="20" expand="true"/>
+            <task id="53" name="time schedule" color="#8cb6ce" meeting="false" start="2016-10-07" duration="1" complete="40" expand="true"/>
+            <task id="54" name="user views (use cases)" color="#8cb6ce" meeting="false" start="2016-10-07" duration="8" complete="0" expand="true"/>
+            <task id="55" name="list of requirements (structured, sorted, numbered)" color="#ff9999" meeting="false" start="2016-10-05" duration="10" complete="15" expand="true">
+                <notes><![CDATA[2016-10-06
+requirements sichten, übersetzen, diskutieren, einschätzen
+bisher Zwei Personen, a 2,5 h
+Anna, Glenn]]></notes>
+                <depend id="25" type="1" difference="0" hardness="Strong"/>
+            </task>
+            <task id="50" name="M1" color="#8cb6ce" meeting="true" start="2016-10-19" duration="0" complete="0" expand="true">
+                <notes><![CDATA[1. documentation of group structure
 2. mission statement & mission objectives
 3. time schedule
 4. user views (use cases)
 5. list of requirements (structured, sorted, numbered)]]></notes>
-            <depend id="18" type="3" difference="0" hardness="Strong"/>
-            <depend id="22" type="3" difference="0" hardness="Strong"/>
-            <depend id="24" type="3" difference="0" hardness="Strong"/>
-            <depend id="26" type="2" difference="0" hardness="Rubber"/>
-            <depend id="28" type="2" difference="0" hardness="Rubber"/>
+                <depend id="52" type="3" difference="0" hardness="Strong"/>
+                <depend id="54" type="3" difference="0" hardness="Strong"/>
+                <depend id="55" type="3" difference="0" hardness="Strong"/>
+                <depend id="58" type="2" difference="1" hardness="Rubber"/>
+                <depend id="59" type="2" difference="0" hardness="Rubber"/>
+            </task>
         </task>
-        <task id="16" name="documentation of group structure" color="#8cb6ce" meeting="false" start="2016-10-03" duration="1" complete="100" expand="true"/>
-        <task id="18" name="mission statement &amp; mission objectives" color="#cc99ff" meeting="false" start="2016-10-04" duration="11" complete="20" expand="true"/>
-        <task id="20" name="time schedule" color="#8cb6ce" meeting="false" start="2016-10-07" duration="1" complete="40" expand="true"/>
-        <task id="22" name="user views (use cases)" color="#8cb6ce" meeting="false" start="2016-10-07" duration="8" complete="0" expand="true"/>
-        <task id="24" name="list of requirements (structured, sorted, numbered)" color="#ff9999" meeting="false" start="2016-10-05" duration="10" complete="15" expand="true">
-            <notes><![CDATA[2016-10-06
-requirements sichten, übersetzen, diskutieren, einschätzen
-bisher Zwei perosnen, a 2,5 h
-Anna, Glenn]]></notes>
-            <depend id="25" type="1" difference="0" hardness="Strong"/>
-        </task>
-        <task id="2" name="M2" color="#8cb6ce" meeting="true" start="2016-11-09" duration="0" complete="0" expand="true">
-            <notes><![CDATA[1. conceptual data model on paper (Chen notation)
+        <task id="56" name="preparation for M2" color="#000000" meeting="false" start="2016-10-20" duration="14" complete="0" expand="false">
+            <task id="58" name="conceptual data model on paper (Chen notation)" color="#8cb6ce" meeting="false" start="2016-10-20" duration="14" complete="0" expand="true"/>
+            <task id="59" name="list of all relevant entities and relationships for each user view" color="#8cb6ce" meeting="false" start="2016-10-20" duration="14" complete="0" expand="true"/>
+            <task id="57" name="M2" color="#8cb6ce" meeting="true" start="2016-11-09" duration="0" complete="0" expand="true">
+                <notes><![CDATA[1. conceptual data model on paper (Chen notation)
 2. list of all relevant entities and relationships for each user view]]></notes>
-            <depend id="26" type="3" difference="0" hardness="Strong"/>
-            <depend id="28" type="3" difference="0" hardness="Strong"/>
-            <depend id="41" type="2" difference="0" hardness="Rubber"/>
-            <depend id="42" type="2" difference="0" hardness="Rubber"/>
-            <depend id="43" type="2" difference="0" hardness="Rubber"/>
+                <depend id="58" type="3" difference="0" hardness="Strong"/>
+                <depend id="59" type="3" difference="0" hardness="Strong"/>
+                <depend id="63" type="2" difference="0" hardness="Rubber"/>
+                <depend id="64" type="2" difference="0" hardness="Rubber"/>
+                <depend id="65" type="2" difference="0" hardness="Rubber"/>
+            </task>
         </task>
-        <task id="26" name="conceptual data model on paper (Chen notation)" color="#8cb6ce" meeting="false" start="2016-10-19" duration="15" complete="0" expand="true"/>
-        <task id="28" name="list of all relevant entities and relationships for each user view" color="#8cb6ce" meeting="false" start="2016-10-19" duration="15" complete="0" expand="true"/>
-        <task id="3" name="M3" color="#8cb6ce" meeting="true" start="2016-11-30" duration="0" complete="0" expand="true">
-            <notes><![CDATA[1. conceptual data model in CASE-tool
+        <task id="60" name="preparation for M3" meeting="false" start="2016-11-09" duration="15" complete="0" expand="false">
+            <task id="62" name="M3" color="#8cb6ce" meeting="true" start="2016-11-30" duration="0" complete="0" expand="true">
+                <notes><![CDATA[1. conceptual data model in CASE-tool
 2. logical data model
 3. proof that all relations are in BCNF or explanation why not]]></notes>
-            <depend id="41" type="3" difference="0" hardness="Strong"/>
-            <depend id="42" type="3" difference="0" hardness="Strong"/>
-            <depend id="43" type="3" difference="0" hardness="Strong"/>
-            <depend id="44" type="2" difference="0" hardness="Rubber"/>
-            <depend id="45" type="2" difference="0" hardness="Rubber"/>
-            <depend id="46" type="2" difference="0" hardness="Rubber"/>
-            <depend id="47" type="2" difference="0" hardness="Rubber"/>
+                <depend id="63" type="3" difference="0" hardness="Strong"/>
+                <depend id="64" type="3" difference="0" hardness="Strong"/>
+                <depend id="65" type="3" difference="0" hardness="Strong"/>
+                <depend id="79" type="2" difference="0" hardness="Rubber"/>
+                <depend id="80" type="2" difference="0" hardness="Rubber"/>
+                <depend id="81" type="2" difference="0" hardness="Rubber"/>
+                <depend id="82" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="63" name="conceptual data model in CASE-tool" color="#8cb6ce" meeting="false" start="2016-11-09" duration="15" complete="0" expand="true"/>
+            <task id="64" name="logical data model" color="#8cb6ce" meeting="false" start="2016-11-09" duration="15" complete="0" expand="true"/>
+            <task id="65" name="proof that all relations are in BCNF or explanation why not" color="#8cb6ce" meeting="false" start="2016-11-09" duration="15" complete="0" expand="true"/>
         </task>
-        <task id="41" name="conceptual data model in CASE-tool" color="#8cb6ce" meeting="false" start="2016-11-09" duration="15" complete="0" expand="true"/>
-        <task id="42" name="logical data model" color="#8cb6ce" meeting="false" start="2016-11-09" duration="15" complete="0" expand="true"/>
-        <task id="43" name="proof that all relations are in BCNF or explanation why not" color="#8cb6ce" meeting="false" start="2016-11-09" duration="15" complete="0" expand="true"/>
-        <task id="4" name="M4" color="#8cb6ce" meeting="true" start="2016-12-21" duration="0" complete="0" expand="true">
-            <notes><![CDATA[1. all SQL code
+        <task id="77" name="prerparation for M4" meeting="false" start="2016-11-30" duration="15" complete="0" expand="false">
+            <task id="79" name="all SQL code" color="#8cb6ce" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true"/>
+            <task id="80" name="MS Access project" color="#8cb6ce" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true"/>
+            <task id="81" name="SQL-code for data loading" color="#8cb6ce" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true"/>
+            <task id="82" name="list of successful and failed test cases" color="#8cb6ce" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true"/>
+            <task id="78" name="M4" color="#8cb6ce" meeting="true" start="2016-12-21" duration="0" complete="0" expand="true">
+                <notes><![CDATA[1. all SQL code
 2. MS Access project
 3. SQL-code for data loading
 4. list of successful and failed test cases]]></notes>
-            <depend id="25" type="3" difference="0" hardness="Strong"/>
-            <depend id="44" type="3" difference="0" hardness="Strong"/>
-            <depend id="45" type="3" difference="0" hardness="Strong"/>
-            <depend id="46" type="3" difference="0" hardness="Strong"/>
-            <depend id="47" type="3" difference="0" hardness="Strong"/>
+                <depend id="25" type="3" difference="0" hardness="Strong"/>
+                <depend id="79" type="3" difference="0" hardness="Strong"/>
+                <depend id="80" type="3" difference="0" hardness="Strong"/>
+                <depend id="81" type="3" difference="0" hardness="Strong"/>
+                <depend id="82" type="3" difference="0" hardness="Strong"/>
+            </task>
         </task>
-        <task id="44" name="all SQL code" color="#8cb6ce" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true"/>
-        <task id="45" name="MS Access project" color="#8cb6ce" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true"/>
-        <task id="46" name="SQL-code for data loading" color="#8cb6ce" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true"/>
-        <task id="47" name="list of successful and failed test cases" color="#8cb6ce" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true"/>
         <task id="5" name="M5" color="#8cb6ce" meeting="true" start="2017-01-11" duration="0" complete="0" expand="true">
             <notes><![CDATA[jetzt wirds eng]]></notes>
         </task>
