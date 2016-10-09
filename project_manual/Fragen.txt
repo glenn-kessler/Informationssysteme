@@ -5,19 +5,19 @@
  
  3. Was ist ein Prodekan
  
- 4. sollen die Studenten sich selber Kurse/Module zuweisen können?
- 4. a) sollen Studenten ausschließlich lesenden Zugriff haben?
- 4. b) was passiert wenn ein Student sich zu einer Prüfung anmeldet? Ist das noch Bestandteil unserer Aufgabe?
+ 4. sollen die Studenten sich selber Kurse/Module zuweisen kÃ¶nnen?
+ 4. a) sollen Studenten ausschlieÃŸlich lesenden Zugriff haben?
+ 4. b) was passiert wenn ein Student sich zu einer PrÃ¼fung anmeldet? Ist das noch Bestandteil unserer Aufgabe?
  
- 5. Sollen andere Fakultäten abgebildet werden können?
- 5. a) Ist beispielsweie Herr Koch als Professor der Fakültät Naturwissenschaften für die Fakultät IT ein externer Lehrbeauftragter?
+ 5. Sollen andere FakultÃ¤ten abgebildet werden kÃ¶nnen?
+ 5. a) Ist beispielsweie Herr Koch als Professor der FakÃ¼ltÃ¤t Naturwissenschaften fÃ¼r die FakultÃ¤t IT ein externer Lehrbeauftragter?
  
- 6. Wie ist die Verfügbarkeit von Zeit im Sommer zum Winter zu berücksichtigen?
+ 6. Wie ist die VerfÃ¼gbarkeit von Zeit im Sommer zum Winter zu berÃ¼cksichtigen?
  
  7. Teilzeit, ist gestaffelt? Wenn ja, in welchen Schritten? 90%, 80%, usw. ?
  
- 8. (Req.29) Das data model + GUI sollen in Deutsch verfasst sein, gilt dies auch für die Dokumentation?
+ 8. (Req.29) Das data model + GUI sollen in Deutsch verfasst sein, gilt dies auch fÃ¼r die Dokumentation?
 
- 9. (Req.6) Muss das System ermöglichen andere als in der StuPo aufgeführte Fächer anzubieten
+ 9. (Req.6) Muss das System ermÃ¶glichen andere als in der StuPo aufgefÃ¼hrte FÃ¤cher anzubieten
 
-10. Muss das System die Raumgröße in Abhängigkeit der Gruppengröße (Raumkapazität) bei der Planung eines Moduls berücksichtigen? 
+10. Muss das System die RaumgrÃ¶ÃŸe in AbhÃ¤ngigkeit der GruppengrÃ¶ÃŸe (RaumkapazitÃ¤t) bei der Planung eines Moduls berÃ¼cksichtigen? 
