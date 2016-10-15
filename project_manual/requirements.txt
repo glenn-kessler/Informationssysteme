@@ -1,4 +1,4 @@
-Main Requirements
+﻿Main Requirements
 Kernanforderungen
  
  1. Strict application of the Database System Development Lifecycle to ensure efficiency of development and to avoid data redundancy.
@@ -118,3 +118,27 @@ OPTIONAL Main Requirements
 
 31. Business process schedule reporting: For a given week, a schedule for a room or a group of students is presented.
 31. Geschäftsprozess: Zeitplan ausgeben d.h. die Anwendung kann den Plan für eine Woche für einen Raum, oder eine Gruppe Studenten ausgeben.
+
+Performance
+
+32. During opening hours, but not during peak periods (Hochbetrieb), expect less than a 1-second response for all single record 
+searches. During peak periods, expect less than a 5-second response for each search (einzelne Datensätze werden gesucht).
+
+33. During opening hours, but not during peak periods, expect less than a 5-second response for all multiple record 
+search. During peak periods, expect less than a 10-second response for each multiple record search (mehrere Datensätze werden gesucht).
+
+34. During opening hours, but not during peak periods, expect less than a 1-second response for each update/save. 
+During peak periods, expect less than a 5-second response for each update/save. 
+
+Security
+
+35. The database application should be password-protected. 
+36. Each user should be assigned database access privileges appropriate to a particular user view, namely administrator, docent, or student.
+37. Each user should see only the data necessary to do his or her job in a form that suits what he or she is doing.
+38. A student should see only module elements data, schedule planning data, or data of docents. In general, students should only have read access in database application.
+
+Backup and Recovery
+
+39. The database should be backed up daily at 12 midnight.
+
+Legal Issues? 
