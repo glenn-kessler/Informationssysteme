@@ -1,17 +1,21 @@
 To maintain (enter, update, and delete) data on professors and their tasks for a selected semester.
 To maintain (enter, update, and delete) data on required work load (Deputat) for each professor (full time or part time) for a selected semester.
 To maintain (enter, update, and delete) data on external lecturers, their SWS for a selected semester and their addresses.
-To maintain (enter, update, and delete) data on SWS for each external lecturer for a selected semester.
 To maintain (enter, update, and delete) data on module elements offered in a selected semester for a selected degree (Studiengang).
+To maintain (enter, update, and delete) data on services provided, i.e. list of module elements taught by IT professors for a different department(name of module element, name of the lecturer, SWS, department which the service is provided for).
+To maintain (enter, update, and delete) data on services used, i.e. list of module elements taught to IT students by a lecturer of another department (name of module element, name of the lecturer, SWS, department which the service is provided by).
 
+To perform searches on docents.
+To perform searches on each professor to display the professor entity.
 To perform searches on each task of each professor for a selected semester.
 To perform searches on required work load for each professor for a selected semester.
 To perform searches on external lecturers, their SWS for a selected academic half year and their addresses.
 To perform searches on module elements offered in a selected semester for a selected degree (Studiengang).
+To perform searches on services provided.
+To perform searches on services used.
 
 To report on each task of each professor for a selected semester.
 To report on module elements offered in a selected academic half year for a selected degree(Studiengang).
 To report on external lecturers, their SWS for a selected semester and their addresses.
-To report on services provided, i.e. list of module elements taught by IT professors for a different department(name of module element, name of the lecturer, SWS, department which the service is provided for).
-To report on services used, i.e. list of module elements taught to IT students by a lecturer of another
-department (name of module element, name of the lecturer, SWS, department which the service is provided by).
+To report on services provided.
+To report on services used.
