@@ -1,32 +1,38 @@
-﻿ 1. Was ist ein Kooptierter Professor ?
- 1. a) Aufgaben? Unterrichten, Labore, Projekte, Prodekan, Studiendekan
+ 1. Was ist ein Kooptierter Professor ? 
+ 1. a) Aufgaben? Unterrichten, Labore, Projekte, Prodekan, Studiendekan → modulberschreibung
+ 1. b) Was ist Zeitaufwand der jeweiligen Aufgaben?
  
- 2. Was ist ein Studiendekan
+ (ignore) 2. Was ist ein Studiendekan
  
- 3. Was ist ein Prodekan
+ (ignore) 3. Was ist ein Prodekan
  
  4. sollen die Studenten sich selber Kurse/Module zuweisen können?
  4. a) sollen Studenten ausschließlich lesenden Zugriff haben?
  4. b) was passiert wenn ein Student sich zu einer Prüfung anmeldet? Ist das noch Bestandteil unserer Aufgabe?
  
- 5. Sollen andere Fakultäten abgebildet werden können?
- 5. a) Ist beispielsweie Herr Koch als Professor der Fakültät Naturwissenschaften für die Fakultät IT ein externer Lehrbeauftragter?
+ 5. Sollen andere Fakultäten abgebildet werden können? 
+ 5. a) Ist beispielsweiße Herr Koch als Professor der Fakultät Naturwissenschaften für die Fakultät IT ein externer Lehrbeauftragter?
  
- 6. Wie ist die Verfügbarkeit von Zeit im Sommer zum Winter zu berücksichtigen?
+ 6. Wie ist die Verfügbarkeit von Zeit im Sommer zum Winter zu berücksichtigen? 
+	(das WS dauert einige Wochen länger als das SS) 
  
- 7. Teilzeit, ist gestaffelt? Wenn ja, in welchen Schritten? 90%, 80%, usw. ?
+ 7. Teilzeit, ist gestaffelt? Wenn ja, in welchen Schritten? 90%, 80%, usw. ? 
  
- 8. (Req.29) Das data model + GUI sollen in Deutsch verfasst sein, gilt dies auch für die Dokumentation?
+ 8. (Req.29) Das data model + GUI sollen in Deutsch verfasst sein, gilt dies auch für die Dokumentation? 
 
- 9. (Req.6) Muss das System ermöglichen andere als in der StuPo aufgeführte Fächer anzubieten
+ 9. (Req.6) Muss das System ermöglichen andere als in der StuPo aufgeführte Fächer anzubieten? 
 
 10. Muss das System die Raumgröße in Abhängigkeit der Gruppengröße (Raumkapazität) bei der Planung eines Moduls berücksichtigen? 
+
+11. Muss das System die Raumgröße in Abhängigkeit der Gruppengröße (Raumkapazität) bei der Planung eines Moduls berücksichtigen? 
+
+12. Muss das System auch Verwaltungspersonal berücksichtigen/pflegen? 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2016-10-15
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-11. Ein Lehrbeauftragter (LB, externer Dozent, external lecturer) ist eine Person, die an einer Hochschule Lehrveranstaltungen hält, ohne dafür in einem Beschäftigungsverhältnis mit dieser Hochschule zu stehen.
+13. Ein Lehrbeauftragter (LB, externer Dozent, external lecturer) ist eine Person, die an einer Hochschule Lehrveranstaltungen hält, ohne dafür in einem Beschäftigungsverhältnis mit dieser Hochschule zu stehen.
 -> Welche Art von Beschäftigungsverhältnis haben externe LB?
 
-12. Darf ein LB so wie ein kooptierter Prof. an andere Fakultäten verliehen werden?
+14. Darf ein LB so wie ein kooptierter Prof. an andere Fakultäten verliehen werden?

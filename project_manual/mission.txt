@@ -1,0 +1,25 @@
+mission statements and mission objectives
+
+mission statement:
+
+A database application for the planning and reporting of teaching at the IT department ofEsslingen University
+
+Ein Datenbanksystem zur Planung und Darstellung des Lehrbetriebs der Fakultät IT der Hochschule Esslingen
+
+stakeholder/User Views: 
+- Dozenten
+- Verwaltung
+- Studenten
+
+
+mission objectives:
+- Planung von Modulen, Dozenten und Räumen (Studentengruppen) 
+
+- Ausgabe der Deputatsstunden über die letzten 3 Jahre von Professoren und externen Dozenten.
+
+- Stammdaten bearbeiten (löschen, hinzufügen, verändern)
+	- Hinzufügen neuer Dozenten
+
+- keine Redundanzen
+
+- 
