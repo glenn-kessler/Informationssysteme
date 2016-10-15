@@ -1,23 +1,19 @@
-Glossar
+﻿Glossar
 ReqNo28. Each modelling element (entity, role, constraint) has to have a description defining the meaning of the entity precisely to avoid misunderstandings.
 SPO (Studien- und Prüfungsordnung, examination regulations) ist eine Sammlung sämtlicher allgemeinen und studiengangsprezifischen Regelungen für alle Fakultäten und Studiengänge (Bachelor und Master) der Hochschule Esslingen.
-Ein Modul (module) ist eine Lehreinheit, die aus mehreren Elementen, z. B. Vorlesung, Labor, Projekt, Übung, etc.) bestehen kann. Jedes Modul hat eine bestimmte Anzahl der Semesterwochenstunden. Jedes Modulelement wird von einem Professor und / oder von einem Lehrbeauftragten (externen Dozenten) unterrichtet. Modul hat ein bestimmtes Lernziel, das im Modulhandbuch festgehalten wird. Modul dauert  normalerweise ein Semester und endet mit einer schriftlichen oder mündlichen Prüfung. In jedem Semester gibt es eine Liste der Module, die in diesem Semester angeboten werden. 
 
-Zu allen Modulen gibt es im Modulhandbuch Modulbeschreibungen, welche
--	die Lernziele der jeweiligen Module,
--	den zeitlichen Aufwand inklusive Selbststudium (Semesterwochenstunden oder SWS),
--	Prüfungsart,
--	Modulverantwortlichen (Professoren oder Lehrbeauftragten)
-enthalten sollen.
-Modul kann ein Wahlfach sein in Modulhandbuch für Wahlfächer aufgelistet werden.
-
-Eine Vorlesung ist  eine Lehrveranstaltung an einer Hochschule, bei der ein Dozent über ein bestimmtes Thema einen Vortrag hält.
-Ein Labor ist eine praktische Übung, die Inhalte aus der Vorlesung verdeutlichen oder einen praktischen Bezug erstellen soll. Ein Labor findet regelmäßig statt und dauert normalerweise ein Semester lang.
 Ein Semester (lat.: semestris ‚sechsmonatig, halbjährig‘ von sex ‚sechs‘ und mensis ‚monat‘) ist eine seit dem 15. Jahrhundert gebräuchliche Bezeichnung für ein Studienhalbjahr (academic half year) an Universitäten bzw. Hochschulen oder Volkshochschulen (VHS).  (aus duden online)
-Eine Semesterwochenstunde (kurz SWS) wird an Hochschulen benutzt, um den Zeitaufwand des Studenten für eine Lehrveranstaltung anzugeben oder das Lehrdeputat des Dozenten zu messen. Dabei bedeutet die Angabe „1 SWS“, dass die entsprechende Veranstaltung für die Dauer der durchschnittlichen Vorlesungszeit eines Semesters wöchentlich 45 Minuten lang gelehrt wird. Durchschnittlich deshalb, weil an vielen Universitäten die Vorlesungszeit im Wintersemester länger dauert (häufig 16 Wochen) als die Vorlesungszeit im Sommersemester (häufig 12 Wochen). 
+
+Eine Semesterwochenstunde (SWS) wird an Hochschulen benutzt, um den Zeitaufwand des Studenten für eine Lehrveranstaltung anzugeben oder das Lehrdeputat des Dozenten zu messen. Dabei bedeutet die Angabe „1 SWS“, dass die entsprechende Veranstaltung für die Dauer der durchschnittlichen Vorlesungszeit eines Semesters wöchentlich 45 Minuten lang gelehrt wird. Durchschnittlich deshalb, weil an vielen Universitäten die Vorlesungszeit im Wintersemester länger dauert (häufig 16 Wochen) als die Vorlesungszeit im Sommersemester (häufig 12 Wochen). 
 https://de.wikipedia.org/wiki/Semesterwochenstunde
 
+Eine Vorlesung ist  eine Lehrveranstaltung, bei der ein Dozent ein bestimmtes Thema behandelt.
+Ein Labor ist eine praktische Übung, die Inhalte aus der Vorlesung verdeutlichen oder einen praktischen Bezug stellen soll.
+Labore finden an bestimmten Terminen statt.
+
 Ein Dozent (im 18. Jahrhundert entlehnt von lat. docēns, Partizip Präsens zu docēre „lehren, unterrichten“) ist eine Person, die an Hochschulen lehrt. 
+
+Ein Dozent kann nicht Professor und Lehrbeauftragter (auch externer Dozent genannt) gleichzeitig sein. Allerdings kann ein externer Dozent ein Professor werden und ein Professor kann ein externer Dozent werden (z.B.: nach Erreichung des Rentenalters).
 
 Zu den Dozenten an Hochschulen zählen vor allem
 
@@ -25,20 +21,48 @@ Zu den Dozenten an Hochschulen zählen vor allem
 -	Professoren,
 -	wissenschaftliche Mitarbeiter.
 
-Ein Dozent kann nicht Professor und Lehrbeauftragter (auch externer Dozent genannt) gleichzeitig sein. Allerdings kann ein externer Dozent ein Professor werden und ein Professor kann ein externer Dozent werden nach Erreichung des Rentenalters.
+Ein Lehrbeauftragter (LB, externer Dozent, external lecturer) ist eine Person, die an einer Hochschule Lehrveranstaltungen hält, ohne dafür in einem Beschäftigungsverhältnis mit dieser Hochschule zu stehen.
+LB haben keinen durchschnittlich vorgeschriebenen Arbeitsaufwand in SWS (Deputat) und können keine andere Aufgaben, z. B. Dekan, Prodekan u.ä. übernehmen.
+Ein LB gehört einer bestimmten Fakultät an.
 
-Ein Lehrbeauftragter (LB, externer Dozent, external lecturer) ist eine Person, die an einer Hochschule Lehrveranstaltungen hält, ohne dafür in einem Beschäftigungsverhältnis mit dieser Hochschule zu stehen. Externe Dozenten haben keinen durchschnittlich vorgeschriebenen Arbeitsaufwand in SWS (Deputat) und können nicht andere Aufgaben, z. B. Dekan, Prodekan u.a. an der Hochschule übernehmen. Ein Lehrbeauftragter gehört einer bestimmten Fakultät an.
-
-Ein Professor ist Lehrer und Forscher an einer Hochschule. Professor hält Lehrveranstaltungen an der Hochschule und trägt Modulverantwortung. Professoren können in Vollzeit oder Teilzeit arbeiten. Sie arbeiten eine bestimmte Menge an SWS pro Semester. Professoren können zusätzlich zur Lehre weitere Aufgaben übernehmen, z. B. Dekan, Prodekan, Studiendekan, Stellv. Dekan, Studiengangleitung, Praktikantenamtsleitung, kooptierte Professor. Professoren können Sabbatical in Anspruch nehmen.
+Ein Professor ist Lehrer und Forscher an einer Hochschule.
+Professoren
+- halten Lehrveranstaltungen 
+- tragen Modulverantwortung.
+- können in Vollzeit oder Teilzeit arbeiten
+- arbeiten eine bestimmte Anzahl an SWS pro Semester
+- können zusätzlich zur Lehre weitere Aufgaben übernehmen
+ z. B. Dekan, Prodekan, Studiendekan, Stellv. Dekan, Studiengangleitung, Praktikantenamtsleitung, kooptierte Professor.
+- können ein Sabbatical in Anspruch nehmen
 
 Das Sabbatical oder das Sabbatjahr ist ein Arbeitszeitmodell für einen längeren Sonderurlaub, der normalerweise von den Professoren zu Forschungszwecken in Anspruch genommen wird.
 
+Die durchschnittliche Menge an SWS pro Semester beträgt 18 SWS für Professoren in Vollzeit.
+Die Anzahl an geleisteten SWS pro Semester kann höher oder niedriger sein, darf aber 9 SWS nicht unterschreiten.
 
-Derzeit soll jeder Vollzeit-Professor an der Hochschule 18 SWS im Durchschnitt pro Semester arbeiten. Das ist die erforderliche Arbeitsbelastung oder Deputat. Die zugeteilte Menge an SWS pro Semester kann höher oder niedriger sein, darf aber nicht 9 SWS pro Semester unterschreiten.
+Als Deputat bezeichnet man die Lehr- beziehungsweise Unterrichtsverpflichtung eines Professors in SWS.
+Dieses beinhaltet die Präsenzzeit in den Lehrveranstaltungen ohne vorbereitende oder nachbereitende Tätigkeiten.
 
-Als Deputat bezeichnet man die Lehr- beziehungsweise Unterrichtsverpflichtung eines Professors. Sie wird oft in Semesterwochenstunden (SWS) gemessen und beinhaltet die Präsenzzeit in den Lehrveranstaltungen ohne vorbereitende oder nachbereitende Tätigkeiten.
+Ein Modul (module) ist eine Lehreinheit, die aus mehreren Elementen, z. B. Vorlesung, Labor, Projekt, Übung, etc. bestehen kann.
+Jedes Modul hat eine bestimmte Anzahl SWS.
+Jedes Modulelement wird von einem Professor und / oder von einem Lehrbeauftragten (externen Dozenten) unterrichtet.
+Ein Modul hat ein bestimmtes Lernziel, das im Modulhandbuch festgehalten ist.
+Ein Modul dauert  normalerweise ein Semester und endet mit einer schriftlichen, oder mündlichen Prüfung, oder der Abgabe einer wissenschaftlichen Arbeit.
+In jedem Semester gibt es eine Liste der Module, die in diesem Semester angeboten werden. 
 
+Zu allen Modulen gibt es im Modulhandbuch Modulbeschreibungen, welche
+-	die Lernziele der jeweiligen Module,
+-	den zeitlichen Aufwand inklusive Selbststudium in SWS,
+-	die Prüfungsart,
+-	den Modulverantwortlichen (Professoren oder Lehrbeauftragten)
+enthalten sollen.
+Modul kann ein Wahlfach sein und ist dann im Modulhandbuch für Wahlfächer gelistet.
 
-Die Anwendung (database application for the planning and reporting of teaching at the IT department of Esslingen University) soll die Arbeitsbelastung aller Professoren und Lehrbeauftragten dokumentieren und in den einzelnen Zeitkonten festhalten. Das Zeitkonto eines Professors soll drei Jahre in die Vergangenheit reichen.
+Die Anwendung (database application for the planning and reporting of teaching at the IT department of Esslingen University) soll die Arbeitsbelastung aller Professoren und Lehrbeauftragten dokumentieren und in den einzelnen Zeitkonten festhalten.
+Das Zeitkonto eines Professors soll drei Jahre in die Vergangenheit reichen.
 
-Eine Semestergruppe (semester group) ist eine Studentengruppe eines Studienganges der Fakultät IT, die zusammen an einem Modul teilnehmen. Semestergruppe kann in verschiedene Lehrgruppen (teaching group) aufgeteilt werden, z.B. IT3A, IT3B und Untergruppen, z.B. Laborgruppen 1 und 2 der IT3A. Zwei Semestergruppen können dieselbe Vorlesung besuchen(z. B. SWT, SWM besuchen Datenbanken 2) mit unterschiedlichen Namen für die Gruppen.
+Eine Semestergruppe (semester group) ist eine Studentengruppe eines Studienganges der Fakultät IT, die zusammen an einem Modul teilnehmen.
+Eine Semestergruppe kann in verschiedene Lehrgruppen (teaching group) aufgeteilt werden, z.B. IT3A, IT3B.
+Diese können wiederum in Untergruppen, z.B. Laborgruppen 1 und 2 der IT3A. unterteilt werden.
+Zwei Semestergruppen können dieselbe Vorlesung besuchen (z.B. SWT, SWM besuchen Datenbanken 2).
+Dabei können die Gruppen unterschiedlichen Namen haben.
