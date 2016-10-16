@@ -1,38 +1,54 @@
- 1. Was ist ein Kooptierter Professor ? 
- 1. a) Aufgaben? Unterrichten, Labore, Projekte, Prodekan, Studiendekan → modulberschreibung
- 1. b) Was ist Zeitaufwand der jeweiligen Aufgaben?
- 
- (ignore) 2. Was ist ein Studiendekan
- 
- (ignore) 3. Was ist ein Prodekan
- 
- 4. sollen die Studenten sich selber Kurse/Module zuweisen können?
- 4. a) sollen Studenten ausschließlich lesenden Zugriff haben?
- 4. b) was passiert wenn ein Student sich zu einer Prüfung anmeldet? Ist das noch Bestandteil unserer Aufgabe?
- 
- 5. Sollen andere Fakultäten abgebildet werden können? 
- 5. a) Ist beispielsweiße Herr Koch als Professor der Fakultät Naturwissenschaften für die Fakultät IT ein externer Lehrbeauftragter?
- 
- 6. Wie ist die Verfügbarkeit von Zeit im Sommer zum Winter zu berücksichtigen? 
+1. Was ist ein Kooptierter Professor?
+	Das ist ein Professor, der zur Fakultät X gehört, die gleichen Rechte aber auch in Fakultät Y hat. Er ist dann in Fakultät kooptiert. Für Sie ist das nicht relevant, denke ich.
+
+1. a) Aufgaben? Unterrichten, Labore, Projekte, Prodekan, Studiendekan Modulberschreibung
+	Aufgaben können z.B. sein: Laborleitung, Auslandsbeauftragter, Praktikantenamtsleiter, ... Die Liste ist beliebig.
+
+1. b) Was ist Zeitaufwand der jeweiligen Aufgaben? 
+	Das können Sie sich ausdenken. Üblicherweise nur wenige Stunden.
+
+2. sollen die Studenten sich selber Kurse/Module zuweisen können?
+	Nein, für die Planung ist das nicht relevant. Wenn Sie das System aber dahingehend erweitern wollen, ist das ok.
+
+2. a) sollen Studenten ausschließlich lesenden Zugriff haben?
+	Siehe Antwort zur vorherigen Frage.
+
+2. b) was passiert wenn ein Student sich zu einer Prüfung anmeldet? Ist das noch Bestandteil unserer Aufgabe?
+	Nein.
+
+3. Sollen andere Fakultäten abgebildet werden können? 
+	Wenn Sie das brauchen, ja.
+
+3. a) Ist beispielsweiße Herr Koch als Professor der Fakultät Naturwissenschaften für die Fakultät IT ein externer Lehrbeauftragter?
+	Nein. Prof. Koch ist bei Grundlagen und macht Service bei IT. Er ist kein Lehrbeauftragter.
+
+4. Wie ist die Verfügbarkeit von Zeit im Sommer zum Winter zu berücksichtigen? 
 	(das WS dauert einige Wochen länger als das SS) 
- 
- 7. Teilzeit, ist gestaffelt? Wenn ja, in welchen Schritten? 90%, 80%, usw. ? 
- 
- 8. (Req.29) Das data model + GUI sollen in Deutsch verfasst sein, gilt dies auch für die Dokumentation? 
+	Sie müssen nur in SWS/DWS rechnen (also wie die Planung für eine Woche). Die Länge der Semester ist irrelevant.
 
- 9. (Req.6) Muss das System ermöglichen andere als in der StuPo aufgeführte Fächer anzubieten? 
+5. Teilzeit, ist gestaffelt? Wenn ja, in welchen Schritten? 90%, 80%, usw. ? 
+	Der Anteil Teilzeit ist beliebig.
 
-10. Muss das System die Raumgröße in Abhängigkeit der Gruppengröße (Raumkapazität) bei der Planung eines Moduls berücksichtigen? 
+6. (Req.29) Das data model + GUI sollen in Deutsch verfasst sein, gilt dies auch für die Dokumentation? 
+	Wie Sie wollen.
 
-11. Muss das System die Raumgröße in Abhängigkeit der Gruppengröße (Raumkapazität) bei der Planung eines Moduls berücksichtigen? 
+7. (Req.6) Muss das System ermöglichen andere als in der StuPo aufgeführte Fächer anzubieten? 
+	Die Wahlfachvorlesungen stehen nicht in der Stupo aber müssen angeboten werden. IT-Professoren machen Service mit Vorlesungen, die nicht zu IT gehören.
 
-12. Muss das System auch Verwaltungspersonal berücksichtigen/pflegen? 
+8. Muss das System die Raumgröße in Abhängigkeit der Gruppengröße (Raumkapazität) bei der Planung eine Moduls berücksichtigen?
+	Nur wenn Sie eine Raumplanung machen.
+
+9. Muss das System auch Verwaltungspersonal berücksichtigen/pflegen? 
+	Nein.
+
+ (ignore) 2. Was ist ein Studiendekan
+ (ignore) 3. Was ist ein Prodekan
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2016-10-15
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-13. Ein Lehrbeauftragter (LB, externer Dozent, external lecturer) ist eine Person, die an einer Hochschule Lehrveranstaltungen hält, ohne dafür in einem Beschäftigungsverhältnis mit dieser Hochschule zu stehen.
+10. Ein Lehrbeauftragter (LB, externer Dozent, external lecturer) ist eine Person, die an einer Hochschule Lehrveranstaltungen hält, ohne dafür in einem Beschäftigungsverhältnis mit dieser Hochschule zu stehen.
 -> Welche Art von Beschäftigungsverhältnis haben externe LB?
 
-14. Darf ein LB so wie ein kooptierter Prof. an andere Fakultäten verliehen werden?
+11. Darf ein LB so wie ein kooptierter Prof. an andere Fakultäten verliehen werden?
