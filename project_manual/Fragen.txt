@@ -44,3 +44,9 @@ Nein.
 -> Welche Art von Beschäftigungsverhältnis haben externe LB?
 
 11. Darf ein LB so wie ein kooptierter Prof. an andere Fakultäten verliehen werden?
+
+12. Was mache ich falsch wenn ich beim starten von Innovator im Datenbanklabor erhalte ich folgende Fehlermeldung?
+	y:\\Innovator\\11.4.3\\inodir\icons not found!
+	
+	Application will be stopped.
+
