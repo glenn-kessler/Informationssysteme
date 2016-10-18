@@ -1,144 +1,216 @@
-﻿Main Requirements
+?Main Requirements
 Kernanforderungen
  
- 1. Strict application of the Database System Development Lifecycle to ensure efficiency of development and to avoid data redundancy.
- 1. Anwendung des Datenbankensystementwicklungs Lifecycle um einen effizienten Entwicklungsprozess zu gewährleisten, sowie um Redundanz zu vermeiden.
+ 10. Strict application of the Database System Development Lifecycle to ensure efficiency of development and to avoid data redundancy.
+ 10. Anwendung des Datenbankensystementwicklungs Lifecycle um einen effizienten Entwicklungsprozess zu gewährleisten, sowie um Redundanz zu vermeiden.
  d.h. es wird auf dem DBMS gearbeitet
  Lifecycle heisst zB Datentypen hinzufügen,entfernen usw.
  
- 2. Strict separation of database, database applicationand GUI
- 2. Strenge Teilung zwischen Datenbank und Grafischem Benutzerinterface
+ 20. Strict separation of database, database applicationand GUI
+ 20. Strenge Teilung zwischen Datenbank und Grafischem Benutzerinterface
  
- 3. All data, constraints and business rules are stored in the database (application).
- 3. Alle Daten, Einschränkungen, und Geschäftsregeln(?) werden in der Datenbankanwendung gespeichert
+ 30. All data, constraints and business rules are stored in the database (application).
+ 30. Alle Daten, Einschränkungen, und Geschäftsregeln(?) werden in der Datenbankanwendung gespeichert
   business rules : das DBMS arbeitet mit den Daten, nicht das Backend oder die GUI
   constraints : geben an wann Daten valide sind zB welcher Datentyp für Zahlen gültig ist, welcher Wertebereich, usw.
 
- 4. The GUI provides means for data access and input only.
- 4. Das Grafische Benutzerinterface stellt ausschließlich die Daten zum Lesen und Schreiben zur Verfügung.
+ 40. The GUI provides means for data access and input only.
+ 40. Das Grafische Benutzerinterface stellt ausschließlich die Daten zum Lesen und Schreiben zur Verfügung.
  
- 5. Implementation of the following business processes.
- 5. Der folgende Prozess soll umgesetzt werden
+ 50. Implementation of the following business processes.
+ 50. Der folgende Prozess soll umgesetzt werden
 
-24. The GUI, to be designed with MS Access, serves the only purpose to insert, update, access and delete data.
-24. Das grafische Benutzerinterface soll ausschliesslich zum eingeben, aktualisieren, lesen und löschen von daten dienen.
+240. The GUI, to be designed with MS Access, serves the only purpose to insert, update, access and delete data.
+240. Das grafische Benutzerinterface soll ausschliesslich zum eingeben, aktualisieren, lesen und löschen von daten dienen.
 
-25. The GUI must not implement any data constraints.
-25. Das grafische Benutzerinterface prüft nicht die Datenintegrität.
+251. The GUI must not implement any data constraints.
+250. Das grafische Benutzerinterface prüft nicht die Datenintegrität.
 
-26. The data model, constraints and business logic in the database must be designed to forbid any inconsistent data.
-26. Das Datenmodell, sowie die Datenintegrität und Business Logik müssen so designed sein das Inkosistenz nicht möglich ist.
+260. The data model, constraints and business logic in the database must be designed to forbid any inconsistent data.
+260. Das Datenmodell, sowie die Datenintegrität und Business Logik müssen so designed sein das Inkosistenz nicht möglich ist.
 
-27. The data model has to be implemented with the modelling tool Innovator.
-27. Das Datenmodell muss mit Innovator erstellt werden.
+270. The data model has to be implemented with the modelling tool Innovator.
+270. Das Datenmodell muss mit Innovator erstellt werden.
 
-28. Each modelling element (entity, role, constraint) has to have a description defining the meaning of the entity precisely to avoid misunderstandings.
-	Example: Possible definitions for entity Semester
-	1. Identification of a specific academic half year, e.g. wintersemester 2012/13.
-	2. Identification of a generic academic half year and all its modules according to the examination regulations, e.g. 6th semester of Softwaretechnik (SWT6).
-	3. Group of students having to take the same lectures as stipulated in the examination regulations (e.g. student group SWB6).
-28. Jedes Modellierungselement (entity, role, constraint) benötigt eine eindeutige Beschreibung.
+280. Each modelling element (entity, role, constraint) has to have a description defining the meaning of the entity precisely to avoid misunderstandings.
+	Example: Possible definitions for entity ?Semester?
+	1. ?Identification of a specific academic half year, e.g. wintersemester 2012/13.?
+	2. ?Identification of a generic academic half year and all its modules according to the examination regulations, e.g. 6th semester of Softwaretechnik (SWT6).?
+	3. ?Group of students having to take the same lectures as stipulated in the examination regulations (e.g. student group SWB6).?
+280. Jedes Modellierungselement (entity, role, constraint) benötigt eine eindeutige Beschreibung.
 
-29. The language of the application (data model, GUI) is German.
-29. Die Sprache der Anwendung ist Deutsch.
+290. The language of the application (data model, GUI) is German.
+290. Die Sprache der Anwendung ist Deutsch.
 
 
 Main Requirements – Business Process
 „Lecture Planning“
 
  
- 6. The examination regulations define which modules have to be offered. Note that not all lectures are defined in the examination regulations (e.g. Wahlfach X, elective X).
- 6. Die Prüfungsordnung definiert die anzubietenden Module. Achtung. Nicht alle Fächer werden darin aufgeführt (zB Wahlfächer usw.)
+ 60. The examination regulations define which modules have to be offered. Note that not all lectures are defined in the examination regulations (e.g. Wahlfach X, elective X).
+ 60. Die Prüfungsordnung definiert die anzubietenden Module. Achtung. Nicht alle Fächer werden darin aufgeführt (zB Wahlfächer usw.)
  
- 7. Modules can consist out of various elements (lectures, labs, projects, ) having a certain number of weekly semester hours (SWS).
- 7. Module können aus mehreren verschieden ELementen bestehen: Vorlesungen, Labore, Projekte, die eine Anzahl an Wochenstunden (SWS) aufweisen.
+ 70. Modules can consist out of various elements (lectures, labs, projects, ?) having a certain number of weekly semester hours (SWS).
+ 70. Module können aus mehreren verschieden ELementen bestehen: Vorlesungen, Labore, Projekte, die eine Anzahl an Wochenstunden (SWS) aufweisen.
   
- 8. Each module element is taught by professors and/or external lecturers (Lehrbeauftragte).
- 8. Jedes Modul wird von Professoren und/oder von externen Lehrbeauftragten unterrichtet
+ 80. Each module element is taught by professors and/or external lecturers (Lehrbeauftragte).
+ 80. Jedes Modul wird von Professoren und/oder von externen Lehrbeauftragten unterrichtet
  
- 9. A semester group may be split into various teaching groups (e.g. IT3A, IT3B) and sub-groups (e.g. lab groups 1 and 2 of IT3A).
- 9. Eine Semstergruppe kann in verschieden Unterrichtsgruppen unterteilt werden. Diese können wiederum in Untergruppen unterteilt werden.
+ 90. A semester group may be split into various teaching groups (e.g. IT3A, IT3B) and sub-groups (e.g. lab groups 1 and 2 of IT3A).
+ 90. Eine Semstergruppe kann in verschieden Unterrichtsgruppen unterteilt werden. Diese können wiederum in Untergruppen unterteilt werden.
  
-10. Two groups may share the same lecture (e.g. SWT, SWM share Databases 2) having different names for the groups.
-10. Zwei Gruppen können sich eine Vorlesung teilen
+100. Two groups may share the same lecture (e.g. SWT, SWM share Databases 2) having different names for the groups.
+100. Zwei Gruppen können sich eine Vorlesung teilen
 
-11. A lecturer cannot be professor and external lecturer at the same time. However, an external lecturer can become a professor and a professor can become an external lecturer after reaching his pension age.
-11. Ein Dozent kann nicht Professor und Externer Lehrbeauftragter gleichzeitg sein. Er kann aber zwischen diesen Rollen wechseln.
+110. A lecturer cannot be professor and external lecturer at the same time. However, an external lecturer can become a professor and a professor can become an external lecturer after reaching his pension age.
+110. Ein Dozent kann nicht Professor und Externer Lehrbeauftragter gleichzeitg sein. Er kann aber zwischen diesen Rollen wechseln.
 
-12. An external lecturer is associated to a specific department (Fakultät). 
-12. Externer Lehrbeauftragter ist einer bestimmten Fakultät zugeordnet
+120. An external lecturer is associated to a specific department (Fakultät). 
+120. Externer Lehrbeauftragter ist einer bestimmten Fakultät zugeordnet
 
-13. A module element has a certain number of SWS assigned in the examination regulations. The number of hours in the time schedule and the number of SWS as work-load of the lecturer might be different to those, e.g. DB2 Project: Student SWS = 2, Lecturer SWS = 1, hours in time schedule = 0.
-13. Einem Modul sind eine bestimmte Menge an SWS zugeordnet. Diese kann für Studenten (2SWS) und Professoren (1SWS) unterschiedlich sein.
+130. A module element has a certain number of SWS assigned in the examination regulations. The number of hours in the time schedule and the number of SWS as work-load of the lecturer might be different to those, e.g. DB2 Project: Student SWS = 2, Lecturer SWS = 1, hours in time schedule = 0.
+130. Einem Modul sind eine bestimmte Menge an SWS zugeordnet. Diese kann für Studenten (2SWS) und Professoren (1SWS) unterschiedlich sein.
 
 
 Main Requirements – Business Process
 „Work Load Documentation“
 
 
-14. Professors have to work a certain amount of SWS each semester. The work can be teaching or assigned tasks (dean, running a lab room, research, ).
-14. Professoren müssen pro Semster eine bestimmte Anzahl an SWS erbringen. Dies kann durch Lehrveranstaltungen, Dekanatsarbeit, Laborbetreuung, usw. erfolgen.
+140. Professors have to work a certain amount of SWS each semester. The work can be teaching or assigned tasks (dean, running a lab room, research, ?).
+140. Professoren müssen pro Semster eine bestimmte Anzahl an SWS erbringen. Dies kann durch Lehrveranstaltungen, Dekanatsarbeit, Laborbetreuung, usw. erfolgen.
 
-15. Currently each full time professor has to work 18 SWS on average (required work load = Deputat). The assigned number of SWS per semester might be higher or lower but not below 9 SWS.
-15. Jeder Vollzeitprofessor hat eine Deputatswochenstunden von wöchentlich 18 SWS. Die zugeordnete Menge an SWS pro Semester kann höher, oder niedriger sein, aber mindestens 9 SWS.
+150. Currently each full time professor has to work 18 SWS on average (required work load = Deputat). The assigned number of SWS per semester might be higher or lower but not below 9 SWS.
+150. Jeder Vollzeitprofessor hat eine Deputatswochenstunden von wöchentlich 18 SWS. Die zugeordnete Menge an SWS pro Semester kann höher, oder niedriger sein, aber mindestens 9 SWS.
 
-16. Professors might work part-time, be ill for a longer time or be on sabbatical.
-16. Professoren können in Teilzeit arbeiten, krank sein, oder ein Sabbatical haben.
+160. Professors might work part-time, be ill for a longer time or be on sabbatical.
+160. Professoren können in Teilzeit arbeiten, krank sein, oder ein Sabbatical haben.
 
-17. External lecturers do not have a required work load and cannot take other assigned tasks.
-17. Externe Lehrbeauftragte haben keine minimale Anzahl an Deputatswochenstunden, und können keine andere Tätigkeit als "Lehre" übernehmen.
+170. External lecturers do not have a required work load and cannot take other assigned tasks.
+170. Externe Lehrbeauftragte haben keine minimale Anzahl an Deputatswochenstunden, und können keine andere Tätigkeit als "Lehre" übernehmen.
 
-18. The application has to document the work load of each professor over the years.
-18. Die Anwendung soll die Arbeitslast pro Professor über die Jahre erfassen. (Zeitkonto)
+180. The application has to document the work load of each professor over the years.
+180. Die Anwendung soll die Arbeitslast pro Professor über die Jahre erfassen. (Zeitkonto)
 
 
 Main Requirements – Business Process
 „Report Generation“
 
 
-19. List of each task of each professor for a selected semester also giving the total work load balance (Stundenkontostand  accumulated real work load versus required work load (Deputat))
-19. Eine Auflistung aller Aufgaben eines Professors pro Semester. Ausserdem Anzeigen der Gesamtstundenanzahl des Deputats im Vergleich zu den geleisteten Stunden.
+190. List of each task of each professor for a selected semester also giving the total work load balance (Stundenkontostand ? accumulated real work load versus required work load (Deputat))
+190. Eine Auflistung aller Aufgaben eines Professors pro Semester. Ausserdem Anzeigen der Gesamtstundenanzahl des Deputats im Vergleich zu den geleisteten Stunden.
 
-20. List of module elements offered in a selected academic half year for a selected degree (Studiengang)
-20. Eine Auflistung der je Stuiengang angebotenen Module für das Semester.
+200. List of module elements offered in a selected academic half year for a selected degree (Studiengang)
+200. Eine Auflistung der je Stuiengang angebotenen Module für das Semester.
 
-21. List of external lecturers, their SWS for a selected academic half year and their addresses
-21. Eine Auflistung der Externen Lehrbeauftragten, sowie ihrer SWS für ein Semester und ihrer Adressen.
+210. List of external lecturers, their SWS for a selected academic half year and their addresses
+210. Eine Auflistung der Externen Lehrbeauftragten, sowie ihrer SWS für ein Semester und ihrer Adressen.
 
-22. List of services provided, i.e. list of module elements taught by IT professors for a different department (name of module element, name of the lecturer, SWS, department which the service is provided for)
-22. Eine Auflistung der Leistungen die von Angestellten der Fakultät IT den anderen Fakultäten angeboten werden.  zB Mathematik wird von Professoren aus der Fakultät Naturwissenschaften unterrichtet in IT, Maschinenbau, usw.
+220. List of services provided, i.e. list of module elements taught by IT professors for a different department (name of module element, name of the lecturer, SWS, department which the service is provided for)
+220. Eine Auflistung der Leistungen die von Angestellten der Fakultät IT den anderen Fakultäten angeboten werden.  zB Mathematik wird von Professoren aus der Fakultät Naturwissenschaften unterrichtet in IT, Maschinenbau, usw.
 
-23. List of services used, i.e. list of module elements taught to IT students by a lecturer of another department (name of module element, name of the lecturer, SWS, department which the service is provided by)
-23. Eine Auflistung der Leistungen die von Angestellten anderer Fakultäten der Fakultät IT angeboten wird.
+230. List of services used, i.e. list of module elements taught to IT students by a lecturer of another department (name of module element, name of the lecturer, SWS, department which the service is provided by)
+230. Eine Auflistung der Leistungen die von Angestellten anderer Fakultäten der Fakultät IT angeboten wird.
 
 OPTIONAL Main Requirements
 
-30. Business process schedule planning: The application can be used to plan the time and room to be reserved for a module element.
-30. Geschäftsprozess: Zeitplanung d.h. die Anwendung kann verwndet werden um Zeit und Raumreservierung für ein bestimmtes Modul zu planen.
+300. Business process ?schedule planning?: The application can be used to plan the time and room to be reserved for a module element.
+300. Geschäftsprozess: Zeitplanung d.h. die Anwendung kann verwndet werden um Zeit und Raumreservierung für ein bestimmtes Modul zu planen.
 
-31. Business process schedule reporting: For a given week, a schedule for a room or a group of students is presented.
-31. Geschäftsprozess: Zeitplan ausgeben d.h. die Anwendung kann den Plan für eine Woche für einen Raum, oder eine Gruppe Studenten ausgeben.
+310. Business process ?schedule reporting?: For a given week, a schedule for a room or a group of students is presented.
+310. Geschäftsprozess: Zeitplan ausgeben d.h. die Anwendung kann den Plan für eine Woche für einen Raum, oder eine Gruppe Studenten ausgeben.
 
 Performance
 
-32. During opening hours, but not during peak periods (Hochbetrieb), expect less than a 1-second response for all single record 
+320. During opening hours, but not during peak periods (Hochbetrieb), expect less than a 1-second response for all single record 
 searches. During peak periods, expect less than a 5-second response for each search (einzelne Datensätze werden gesucht).
 
-33. During opening hours, but not during peak periods, expect less than a 5-second response for all multiple record 
+330. During opening hours, but not during peak periods, expect less than a 5-second response for all multiple record 
 search. During peak periods, expect less than a 10-second response for each multiple record search (mehrere Datensätze werden gesucht).
 
-34. During opening hours, but not during peak periods, expect less than a 1-second response for each update/save. 
+340. During opening hours, but not during peak periods, expect less than a 1-second response for each update/save. 
 During peak periods, expect less than a 5-second response for each update/save. 
 
 Security
 
-35. The database application should be password-protected. 
-36. Each user should be assigned database access privileges appropriate to a particular user view, namely administrator, docent, or student.
-37. Each user should see only the data necessary to do his or her job in a form that suits what he or she is doing.
-38. A student should see only module elements data, schedule planning data, or data of docents. In general, students should only have read access in database application.
+350. The database application should be password-protected. 
+360. Each user should be assigned database access privileges appropriate to a particular user view, namely administrator, docent, or student.
+370. Each user should see only the data necessary to do his or her job in a form that suits what he or she is doing.
+380. A student should see only module elements data, schedule planning data, or data of docents. In general, students should only have read access in database application.
 
 Backup and Recovery
 
-39. The database should be backed up daily at 12 midnight.
+390. The database should be backed up daily at 12 midnight.
 
 Legal Issues? 
+
+User View Professor
+
+400. Professors should be able to view reports on their tasks.
+
+410. Professors should be able to view reports on their required workload.
+
+420. Professors should be able to view reports on module elements offered in a selected semester.
+
+430. Professors should be able to view reports on services provided to other falculties.
+
+440. Professors should be able to view reports on services received from another falculty.
+
+User View LB
+
+500. LB should be able to view reports on external lecturers.
+
+510. LB should be able to view reports on SWS for themselfes.
+
+520. LB should be able to view reports on module elements offered in a selected semester.
+
+User View Student
+
+600. Students should be able to view reports on professors and their tasks.
+
+610. Students should be able to view reports on LB's.
+
+620. Students should be able to view reports on module elements offered in a selected semester.
+
+User View Administrator
+
+700. Administrators should be able to view reports on the Professors tasks.
+
+710. Administrators should be able to view reports on the Professors required workload.
+
+720. Administrators should be able to view reports on the external leturers.
+
+730. Administrators should be able to view reports on the external leturers SWS.
+
+740. Administrators should be able to view reports on module elements offered in a selected semester.
+
+750. Administrators should be able to view reports on services provided to other falculties.
+
+760. Administrators should be able to view reports on services received from another falculty.
+
+800. Administrators should be able to make queries on the Professors tasks.
+
+810. Administrators should be able to make queries on the Professors required workload.
+
+820. Administrators should be able to make queries on the external leturers.
+
+830. Administrators should be able to make queries on the external leturers SWS.
+
+840. Administrators should be able to make queries on module elements offered in a selected semester.
+
+850. Administrators should be able to make queries on services provided to other falculties.
+
+860. Administrators should be able to make queries on services received from another falculty.
+
+900. Administrators should be able to edit the Professors tasks.
+
+910. Administrators should be able to edit the Professors required workload.
+
+920. Administrators should be able to edit the external leturers data. 
+
+930. Administrators should be able to edit the external leturers SWS.
+
+940. Administrators should be able to edit module elements offered in a selected semester.
+
+950. Administrators should be able to edit services provided to other falculties.
+
+960. Administrators should be able to edit services received from another falculty.
