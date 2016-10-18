@@ -1,4 +1,4 @@
-?Main Requirements
+Main Requirements
 Kernanforderungen
  
  10. Strict application of the Database System Development Lifecycle to ensure efficiency of development and to avoid data redundancy.
@@ -33,19 +33,17 @@ Kernanforderungen
 270. Das Datenmodell muss mit Innovator erstellt werden.
 
 280. Each modelling element (entity, role, constraint) has to have a description defining the meaning of the entity precisely to avoid misunderstandings.
-	Example: Possible definitions for entity ?Semester?
-	1. ?Identification of a specific academic half year, e.g. wintersemester 2012/13.?
-	2. ?Identification of a generic academic half year and all its modules according to the examination regulations, e.g. 6th semester of Softwaretechnik (SWT6).?
-	3. ?Group of students having to take the same lectures as stipulated in the examination regulations (e.g. student group SWB6).?
+	Example: Possible definitions for entity Semester
+	1. Identification of a specific academic half year, e.g. wintersemester 2012/13.
+	2. Identification of a generic academic half year and all its modules according to the examination regulations, e.g. 6th semester of Softwaretechnik (SWT6).
+	3. Group of students having to take the same lectures as stipulated in the examination regulations (e.g. student group SWB6).
 280. Jedes Modellierungselement (entity, role, constraint) benötigt eine eindeutige Beschreibung.
 
 290. The language of the application (data model, GUI) is German.
 290. Die Sprache der Anwendung ist Deutsch.
 
-
 Main Requirements – Business Process
-„Lecture Planning“
-
+"Lecture Planning"
  
  60. The examination regulations define which modules have to be offered. Note that not all lectures are defined in the examination regulations (e.g. Wahlfach X, elective X).
  60. Die Prüfungsordnung definiert die anzubietenden Module. Achtung. Nicht alle Fächer werden darin aufgeführt (zB Wahlfächer usw.)
@@ -71,10 +69,8 @@ Main Requirements – Business Process
 130. A module element has a certain number of SWS assigned in the examination regulations. The number of hours in the time schedule and the number of SWS as work-load of the lecturer might be different to those, e.g. DB2 Project: Student SWS = 2, Lecturer SWS = 1, hours in time schedule = 0.
 130. Einem Modul sind eine bestimmte Menge an SWS zugeordnet. Diese kann für Studenten (2SWS) und Professoren (1SWS) unterschiedlich sein.
 
-
 Main Requirements – Business Process
 „Work Load Documentation“
-
 
 140. Professors have to work a certain amount of SWS each semester. The work can be teaching or assigned tasks (dean, running a lab room, research, ?).
 140. Professoren müssen pro Semster eine bestimmte Anzahl an SWS erbringen. Dies kann durch Lehrveranstaltungen, Dekanatsarbeit, Laborbetreuung, usw. erfolgen.
@@ -91,10 +87,8 @@ Main Requirements – Business Process
 180. The application has to document the work load of each professor over the years.
 180. Die Anwendung soll die Arbeitslast pro Professor über die Jahre erfassen. (Zeitkonto)
 
-
 Main Requirements – Business Process
-„Report Generation“
-
+"Report Generation"
 
 190. List of each task of each professor for a selected semester also giving the total work load balance (Stundenkontostand ? accumulated real work load versus required work load (Deputat))
 190. Eine Auflistung aller Aufgaben eines Professors pro Semester. Ausserdem Anzeigen der Gesamtstundenanzahl des Deputats im Vergleich zu den geleisteten Stunden.
@@ -113,10 +107,10 @@ Main Requirements – Business Process
 
 OPTIONAL Main Requirements
 
-300. Business process ?schedule planning?: The application can be used to plan the time and room to be reserved for a module element.
+300. Business process schedule planning: The application can be used to plan the time and room to be reserved for a module element.
 300. Geschäftsprozess: Zeitplanung d.h. die Anwendung kann verwndet werden um Zeit und Raumreservierung für ein bestimmtes Modul zu planen.
 
-310. Business process ?schedule reporting?: For a given week, a schedule for a room or a group of students is presented.
+310. Business process schedule reporting: For a given week, a schedule for a room or a group of students is presented.
 310. Geschäftsprozess: Zeitplan ausgeben d.h. die Anwendung kann den Plan für eine Woche für einen Raum, oder eine Gruppe Studenten ausgeben.
 
 Performance
@@ -133,9 +127,17 @@ During peak periods, expect less than a 5-second response for each update/save.
 Security
 
 350. The database application should be password-protected. 
+
 360. Each user should be assigned database access privileges appropriate to a particular user view, namely administrator, docent, or student.
+
 370. Each user should see only the data necessary to do his or her job in a form that suits what he or she is doing.
-380. A student should see only module elements data, schedule planning data, or data of docents. In general, students should only have read access in database application.
+	Se User Views for a general Idea on what views/reports etc. should be accessible.
+
+380. Students should see only module elements data, schedule planning data, or data of docents.
+
+381. Students should only have read access in the database application.
+
+382. Professors should only have read access in the database application.
 
 Backup and Recovery
 
@@ -155,13 +157,13 @@ User View Professor
 
 440. Professors should be able to view reports on services received from another falculty.
 
-User View LB
+User View external Lecturer
 
-500. LB should be able to view reports on external lecturers.
+500. external Lecturers should be able to view reports on external lecturers.
 
-510. LB should be able to view reports on SWS for themselfes.
+510. external Lecturers should be able to view reports on SWS for themselfes.
 
-520. LB should be able to view reports on module elements offered in a selected semester.
+520. external Lecturers should be able to view reports on module elements offered in a selected semester.
 
 User View Student
 
