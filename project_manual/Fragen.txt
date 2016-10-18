@@ -43,10 +43,15 @@ Nein.
 10. Ein Lehrbeauftragter (LB, externer Dozent, external lecturer) ist eine Person, die an einer Hochschule Lehrveranstaltungen hält, ohne dafür in einem Beschäftigungsverhältnis mit dieser Hochschule zu stehen.
 -> Welche Art von Beschäftigungsverhältnis haben externe LB?
 
+Sie bekommen einen Lehrauftrag, d.h. einen Vertrag für eine bestimmte Anzahl Lehrstunden für ein bestimmte Summe Geld.
+
 11. Darf ein LB so wie ein kooptierter Prof. an andere Fakultäten verliehen werden?
+
+Gute Frage. Ein Lehrbeauftragter kann an mehreren Fakultäten gleichzeitig lehren. Er/Sie ist aber nur einer Fakultät zugeordnete (hat einen Hauptansprechpartner in einer der Fakultäten).
 
 12. Was mache ich falsch wenn ich beim starten von Innovator im Datenbanklabor erhalte ich folgende Fehlermeldung?
 	y:\\Innovator\\11.4.3\\inodir\icons not found!
 	
 	Application will be stopped.
 
+Wahrscheinlich gar nichts. Version 11.4 gibt es gar nicht mehr. Der neue Innovator ist noch nicht fertig konfiguriert. Brauchen Sie ja auch noch nicht.
