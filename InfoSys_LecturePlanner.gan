@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="InfoSys LecturePlanner" company="" webLink="http://" view-date="2016-08-01" view-index="0" gantt-divider-location="554" resource-divider-location="300" version="2.8.1" locale="de">
+<?xml version="1.0" encoding="UTF-8"?><project name="InfoSys LecturePlanner" company="" webLink="http://" view-date="2016-09-27" view-index="0" gantt-divider-location="554" resource-divider-location="300" version="2.8.1" locale="de">
     <description/>
-    <view zooming-state="default:8" id="gantt-chart">
-        <field id="tpd3" name="Vorgang" width="333" order="0"/>
-        <field id="tpd4" name="Anfang" width="70" order="1"/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Vorgang" width="334" order="0"/>
+        <field id="tpd4" name="Anfang" width="71" order="1"/>
         <field id="tpd5" name="Ende" width="145" order="2"/>
         <timeline><![CDATA[5,56]]></timeline>
         <option id="color.recent"><![CDATA[#ff9999 #cc99ff #9933ff #ff3300]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Ressource" width="209" order="0"/>
-        <field id="1" name="Rolle" width="85" order="1"/>
+        <field id="0" name="Ressource" width="210" order="0"/>
+        <field id="1" name="Rolle" width="86" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -36,7 +36,7 @@
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
         <task id="0" name="InfoSys LecturePlanner Entwicklung" color="#8cb6ce" meeting="false" start="2016-09-28" duration="61" complete="0" priority="3" expand="true"/>
-        <task id="48" name="preparation for M1" color="#000000" meeting="false" start="2016-10-03" duration="12" complete="15" expand="true">
+        <task id="48" name="preparation for M1" color="#000000" meeting="false" start="2016-10-03" duration="12" complete="76" expand="true">
             <notes><![CDATA[2016-10-09 Meeting
 Anna, Marvin, Glenn
 GanttProject and GitHub install for Anna 
@@ -57,10 +57,10 @@ bisher Zwei Personen, a 2,5 h
 Anna, Glenn
 ]]></notes>
             <task id="51" name="documentation of group structure" color="#8cb6ce" meeting="false" start="2016-10-03" duration="1" complete="100" expand="true"/>
-            <task id="52" name="mission statement &amp; mission objectives" color="#cc99ff" meeting="false" start="2016-10-04" duration="11" complete="20" expand="true"/>
+            <task id="52" name="mission statement &amp; mission objectives" color="#cc99ff" meeting="false" start="2016-10-04" duration="9" complete="100" expand="true"/>
             <task id="53" name="time schedule" color="#8cb6ce" meeting="false" start="2016-10-07" duration="1" complete="40" expand="true"/>
-            <task id="54" name="user views (use cases)" color="#8cb6ce" meeting="false" start="2016-10-07" duration="8" complete="0" expand="true"/>
-            <task id="55" name="list of requirements (structured, sorted, numbered)" color="#ff9999" meeting="false" start="2016-10-05" duration="10" complete="15" expand="true">
+            <task id="54" name="user views (use cases)" color="#8cb6ce" meeting="false" start="2016-10-07" duration="8" complete="70" expand="true"/>
+            <task id="55" name="list of requirements (structured, sorted, numbered)" color="#ff9999" meeting="false" start="2016-10-05" duration="10" complete="70" expand="true">
                 <depend id="25" type="1" difference="0" hardness="Strong"/>
             </task>
             <task id="50" name="M1" color="#8cb6ce" meeting="true" start="2016-10-19" duration="0" complete="0" expand="true">
@@ -69,7 +69,6 @@ Anna, Glenn
 3. time schedule
 4. user views (use cases)
 5. list of requirements (structured, sorted, numbered)]]></notes>
-                <depend id="52" type="3" difference="0" hardness="Strong"/>
                 <depend id="54" type="3" difference="0" hardness="Strong"/>
                 <depend id="55" type="3" difference="0" hardness="Strong"/>
                 <depend id="58" type="2" difference="1" hardness="Rubber"/>
