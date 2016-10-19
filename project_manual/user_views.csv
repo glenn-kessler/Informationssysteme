@@ -1,22 +1,25 @@
-Data;Access Type;Professor;Lehrbeauftragter;Administrator;Student
-data on professors and their tasks;Maintain;;;x;
-;Query;;;x;
-;Report;x;;x;x
-data on required work load (Deputat) for each professor;Maintain;;;x;
-;Query;;;x;
-;Report;x;;x;
-data on external lecturers;Maintain;;;x;
-;Query;;;x;
-;Report;;x;x;x
-data on SWS for each external lecturer;Maintain;;;x;
-;Query;;;x;
-;Report;;x;x;
-data on module elements offered in a selected semester;Maintain;;;x;
-;Query;;;x;
-;Report;x;x;x;x
-data on services provided to another faculty;Maintain;;;x;
-;Query;;;x;
-;Report;x;;x;
-data on services used from another faculty;Maintain;;;x;
-;Query;;;x;
-;Report;x;;x;
+Data,Access Type,Professor,Lehrbeauftragter,Administrator,Student
+data on professors particulars,Maintain,,,x,
+,Query,,,x,
+,Report,eigene,,alle,x
+data on professors tasks,Maintain,,,x,
+,Query,,,x,
+,Report,eigene,,alle,x
+data on required work load (Deputat) for each professor,Maintain,,,x,
+,Query,,,x,
+,Report,x,,x,
+data on external lecturers,Maintain,,,x,
+,Query,,,x,
+,Report,,x,x,x
+data on SWS for each external lecturer,Maintain,,,x,
+,Query,,,x,
+,Report,,x,x,
+data on module elements offered in a selected semester,Maintain,,,x,
+,Query,,,x,
+,Report,x,x,x,x
+data on services provided to another faculty,Maintain,,,x,
+,Query,,,x,
+,Report,x,,x,
+data on services used from another faculty,Maintain,,,x,
+,Query,,,x,
+,Report,x,,x,
