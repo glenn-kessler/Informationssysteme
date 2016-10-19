@@ -66,8 +66,8 @@ Main Requirements – Business Process
 120. An external lecturer is associated to a specific department (Fakultät). 
 120. Externer Lehrbeauftragter ist einer bestimmten Fakultät zugeordnet
 
-130. A module element has a certain number of SWS assigned in the examination regulations. The number of hours in the time schedule and the number of SWS as work-load of the lecturer might be different to those, e.g. DB2 Project: Student SWS = 2, Lecturer SWS = 1, hours in time schedule = 0.
-130. Einem Modul sind eine bestimmte Menge an SWS zugeordnet. Diese kann für Studenten (2SWS) und Professoren (1SWS) unterschiedlich sein.
+130. A module element has a certain number of SWS assigned in the examination regulations. The number of hours in the time schedule and the number of SWS as work-load of the lecturer might be different to those, e.g. DB2 Project: Lecturer SWS = 1, hours in time schedule = 0.
+130. Einem Modul sind eine bestimmte Menge an SWS zugeordnet.
 
 Main Requirements – Business Process
 „Work Load Documentation“
@@ -145,6 +145,7 @@ Backup and Recovery
 
 Legal Issues? 
 
+
 User View Professor
 
 400. Professors should be able to view reports on their tasks.
@@ -157,6 +158,7 @@ User View Professor
 
 440. Professors should be able to view reports on services received from another faculty.
 
+
 User View external Lecturer
 
 500. external Lecturers should be able to view reports on external lecturers.
@@ -165,13 +167,6 @@ User View external Lecturer
 
 520. external Lecturers should be able to view reports on module elements offered in a selected semester.
 
-User View Student
-
-600. Students should be able to view reports on professors and their tasks.
-
-610. Students should be able to view reports on LB's.
-
-620. Students should be able to view reports on module elements offered in a selected semester.
 
 User View Administrator
 
