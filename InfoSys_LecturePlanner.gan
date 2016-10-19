@@ -35,7 +35,9 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="InfoSys LecturePlanner Entwicklung" color="#8cb6ce" meeting="false" start="2016-09-28" duration="61" complete="0" priority="3" expand="true"/>
+        <task id="0" name="InfoSys LecturePlanner Entwicklung" color="#8cb6ce" meeting="false" start="2016-09-28" duration="61" complete="0" priority="3" expand="true">
+            <notes><![CDATA[Project Leader: Marvin Wiegand <mawiit13@hs-esslingen.de>]]></notes>
+        </task>
         <task id="48" name="preparation for M1" color="#000000" meeting="false" start="2016-10-03" duration="12" complete="76" expand="true">
             <notes><![CDATA[2016-10-09 Meeting
 Anna, Marvin, Glenn
@@ -64,8 +66,7 @@ Anna, Glenn
                 <depend id="25" type="1" difference="0" hardness="Strong"/>
             </task>
             <task id="50" name="M1" color="#8cb6ce" meeting="true" start="2016-10-19" duration="0" complete="0" expand="true">
-                <notes><![CDATA[Anna
-
+                <notes><![CDATA[Milestone Leader: Anna Dorschel <andoit02@hs-esslingen.de>
 
 1. documentation of group structure
 2. mission statement & mission objectives
@@ -82,7 +83,7 @@ Anna, Glenn
             <task id="58" name="conceptual data model on paper (Chen notation)" color="#8cb6ce" meeting="false" start="2016-10-20" duration="14" complete="0" expand="true"/>
             <task id="59" name="list of all relevant entities and relationships for each user view" color="#8cb6ce" meeting="false" start="2016-10-20" duration="14" complete="0" expand="true"/>
             <task id="57" name="M2" color="#8cb6ce" meeting="true" start="2016-11-09" duration="0" complete="0" expand="true">
-                <notes><![CDATA[Marvin
+                <notes><![CDATA[Milestone Leader: Marvin Wiegand <mawiit13@hs-esslingen.de>
 
 1. conceptual data model on paper (Chen notation)
 2. list of all relevant entities and relationships for each user view]]></notes>
@@ -95,7 +96,7 @@ Anna, Glenn
         </task>
         <task id="60" name="preparation for M3" meeting="false" start="2016-11-09" duration="15" complete="0" expand="true">
             <task id="62" name="M3" color="#8cb6ce" meeting="true" start="2016-11-30" duration="0" complete="0" expand="true">
-                <notes><![CDATA[Glenn
+                <notes><![CDATA[Milestone Leader: Glenn Keßler <glkeit00@hs-esslingen.de>
 
 1. conceptual data model in CASE-tool
 2. logical data model
@@ -118,7 +119,7 @@ Anna, Glenn
             <task id="81" name="SQL-code for data loading" color="#8cb6ce" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true"/>
             <task id="82" name="list of successful and failed test cases" color="#8cb6ce" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true"/>
             <task id="78" name="M4" color="#8cb6ce" meeting="true" start="2016-12-21" duration="0" complete="0" expand="true">
-                <notes><![CDATA[Konrad
+                <notes><![CDATA[Milestone Leader: Konrad Wilhelm <kowiit00@hs-esslingen.de>
 
 1. all SQL code
 2. MS Access project
