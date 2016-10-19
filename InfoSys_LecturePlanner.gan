@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="InfoSys LecturePlanner" company="" webLink="http://" view-date="2016-09-27" view-index="0" gantt-divider-location="554" resource-divider-location="300" version="2.8.1" locale="de">
+<?xml version="1.0" encoding="UTF-8"?><project name="InfoSys LecturePlanner" company="" webLink="http://" view-date="2016-09-26" view-index="0" gantt-divider-location="554" resource-divider-location="300" version="2.8.1" locale="de">
     <description/>
-    <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Vorgang" width="334" order="0"/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Vorgang" width="333" order="0"/>
         <field id="tpd4" name="Anfang" width="71" order="1"/>
-        <field id="tpd5" name="Ende" width="145" order="2"/>
+        <field id="tpd5" name="Ende" width="144" order="2"/>
         <timeline><![CDATA[5,56]]></timeline>
         <option id="color.recent"><![CDATA[#ff9999 #cc99ff #9933ff #ff3300]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Ressource" width="210" order="0"/>
-        <field id="1" name="Rolle" width="86" order="1"/>
+        <field id="0" name="Ressource" width="209" order="0"/>
+        <field id="1" name="Rolle" width="85" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -64,7 +64,10 @@ Anna, Glenn
                 <depend id="25" type="1" difference="0" hardness="Strong"/>
             </task>
             <task id="50" name="M1" color="#8cb6ce" meeting="true" start="2016-10-19" duration="0" complete="0" expand="true">
-                <notes><![CDATA[1. documentation of group structure
+                <notes><![CDATA[Anna
+
+
+1. documentation of group structure
 2. mission statement & mission objectives
 3. time schedule
 4. user views (use cases)
@@ -75,11 +78,13 @@ Anna, Glenn
                 <depend id="59" type="2" difference="0" hardness="Rubber"/>
             </task>
         </task>
-        <task id="56" name="preparation for M2" color="#000000" meeting="false" start="2016-10-20" duration="14" complete="0" expand="false">
+        <task id="56" name="preparation for M2" color="#000000" meeting="false" start="2016-10-20" duration="14" complete="0" expand="true">
             <task id="58" name="conceptual data model on paper (Chen notation)" color="#8cb6ce" meeting="false" start="2016-10-20" duration="14" complete="0" expand="true"/>
             <task id="59" name="list of all relevant entities and relationships for each user view" color="#8cb6ce" meeting="false" start="2016-10-20" duration="14" complete="0" expand="true"/>
             <task id="57" name="M2" color="#8cb6ce" meeting="true" start="2016-11-09" duration="0" complete="0" expand="true">
-                <notes><![CDATA[1. conceptual data model on paper (Chen notation)
+                <notes><![CDATA[Marvin
+
+1. conceptual data model on paper (Chen notation)
 2. list of all relevant entities and relationships for each user view]]></notes>
                 <depend id="58" type="3" difference="0" hardness="Strong"/>
                 <depend id="59" type="3" difference="0" hardness="Strong"/>
@@ -88,9 +93,11 @@ Anna, Glenn
                 <depend id="65" type="2" difference="0" hardness="Rubber"/>
             </task>
         </task>
-        <task id="60" name="preparation for M3" meeting="false" start="2016-11-09" duration="15" complete="0" expand="false">
+        <task id="60" name="preparation for M3" meeting="false" start="2016-11-09" duration="15" complete="0" expand="true">
             <task id="62" name="M3" color="#8cb6ce" meeting="true" start="2016-11-30" duration="0" complete="0" expand="true">
-                <notes><![CDATA[1. conceptual data model in CASE-tool
+                <notes><![CDATA[Glenn
+
+1. conceptual data model in CASE-tool
 2. logical data model
 3. proof that all relations are in BCNF or explanation why not]]></notes>
                 <depend id="63" type="3" difference="0" hardness="Strong"/>
@@ -105,13 +112,15 @@ Anna, Glenn
             <task id="64" name="logical data model" color="#8cb6ce" meeting="false" start="2016-11-09" duration="15" complete="0" expand="true"/>
             <task id="65" name="proof that all relations are in BCNF or explanation why not" color="#8cb6ce" meeting="false" start="2016-11-09" duration="15" complete="0" expand="true"/>
         </task>
-        <task id="77" name="prerparation for M4" meeting="false" start="2016-11-30" duration="15" complete="0" expand="false">
+        <task id="77" name="prerparation for M4" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true">
             <task id="79" name="all SQL code" color="#8cb6ce" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true"/>
             <task id="80" name="MS Access project" color="#8cb6ce" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true"/>
             <task id="81" name="SQL-code for data loading" color="#8cb6ce" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true"/>
             <task id="82" name="list of successful and failed test cases" color="#8cb6ce" meeting="false" start="2016-11-30" duration="15" complete="0" expand="true"/>
             <task id="78" name="M4" color="#8cb6ce" meeting="true" start="2016-12-21" duration="0" complete="0" expand="true">
-                <notes><![CDATA[1. all SQL code
+                <notes><![CDATA[Konrad
+
+1. all SQL code
 2. MS Access project
 3. SQL-code for data loading
 4. list of successful and failed test cases]]></notes>
