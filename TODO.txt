@@ -1,0 +1,33 @@
+TODO:
+
+In Progress
+
+[√] Arbeitsaufwand schätzen → Gantt Project oder anderes Tool verwenden (Ampel-Farben-System [rot:hoher Aufwand, gelb:mittlerer Aufwand, grün:geringer Aufwand, Fortschrittsbalken: erledigt])
+
+[ ] Entscheidung Stundenplan-Planung zu implementieren oder nicht
+
+[ ] Requirements ergänzen in Hinblick auf Wahlfächer
+
+[ ] Ausführlichere Requirements + User-Views bezüglich Daten die Professoren verwalten können müssen 
+
+[ ] Requirement formulieren: Vorlesung-Planung in Abhängigkeit der Qualifikation (Kompetenzmatrix) und Verfügbarkeit (max SWS) eines Professors
+
+[ ] Requirement variable werte als SWS formulieren und dass die hätte der default SWS minimalanforderung sind
+
+[ ] Zuordnung SPO zu modul VS reale modul
+
+[ ] requirements ergänzen in Bezug auf Wahlfächer
+
+[ ] requirement erstellen mehrere Stupo's parallel planen zu können
+
+
+Backlog
+
+- 
+
+
+
+Optional
+
+- Req: 300: Business process schedule planning
+- Req: 310: Business process schedule reporting
