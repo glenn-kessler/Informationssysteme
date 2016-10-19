@@ -1,0 +1,46 @@
+./project_manual/Fragen.txt:2. sollen die Studenten sich selber Kurse/Module zuweisen können?
+./project_manual/Fragen.txt:	2. a) sollen Studenten ausschließlich lesenden Zugriff haben?
+./project_manual/Fragen.txt:	2. b) was passiert wenn ein Student sich zu einer Prüfung anmeldet? Ist das noch Bestandteil unserer Aufgabe?
+./project_manual/Glossar.txt:Eine Semesterwochenstunde (SWS) wird an Hochschulen benutzt, um den Zeitaufwand des Studenten für eine Lehrveranstaltung anzugeben oder das Lehrdeputat des Dozenten zu messen. Dabei bedeutet die Angabe „1 SWS“, dass die entsprechende Veranstaltung für die Dauer der durchschnittlichen Vorlesungszeit eines Semesters wöchentlich 45 Minuten lang gelehrt wird. Durchschnittlich deshalb, weil an vielen Universitäten die Vorlesungszeit im Wintersemester länger dauert (häufig 16 Wochen) als die Vorlesungszeit im Sommersemester (häufig 12 Wochen). 
+./project_manual/Glossar.txt:Eine Semestergruppe (semester group) ist eine Studentengruppe eines Studienganges der Fakultät IT, die zusammen an einem Modul teilnehmen.
+./project_manual/mission.txt:- Studenten
+./project_manual/requirements.txt:	3. Group of students having to take the same lectures as stipulated in the examination regulations (e.g., student group SWB6).
+
+./project_manual/requirements.txt:130. A module element has a certain number of SWS assigned in the examination regulations. The number of hours in the time schedule and the number of SWS as work-load of the lecturer might be different to those, e.g. DB2 Project: Student SWS = 2, Lecturer SWS = 1, hours in time schedule = 0.
+
+./project_manual/requirements.txt:130. Einem Modul sind eine bestimmte Menge an SWS zugeordnet. Diese kann für Studenten (2SWS) und Professoren (1SWS) unterschiedlich sein.
+
+./project_manual/requirements.txt:230. List of services used, i.e. list of module elements taught to IT students by a lecturer of another department (name of module element, name of the lecturer, SWS, department which the service is provided by)
+
+./project_manual/requirements.txt:310. Business process schedule reporting: For a given week, a schedule for a room or a group of students is presented.
+
+./project_manual/requirements.txt:310. Geschäftsprozess: Zeitplan ausgeben d.h. die Anwendung kann den Plan für eine Woche für einen Raum, oder eine Gruppe Studenten ausgeben.
+
+./project_manual/requirements.txt:360. Each user should be assigned database access privileges appropriate to a particular user view, namely administrator, docent, or student.
+
+./project_manual/requirements.txt:380. Students should see only module elements data, schedule planning data, or data of docents.
+
+./project_manual/requirements.txt:381. Students should only have read access in the database application.
+
+./project_manual/requirements.txt:User View Student
+
+./project_manual/requirements.txt:600. Students should be able to view reports on professors and their tasks.
+
+./project_manual/requirements.txt:610. Students should be able to view reports on LB's.
+
+./project_manual/requirements.txt:620. Students should be able to view reports on module elements offered in a selected semester.
+
+User View Student
+
+
+
+600. Students should be able to view reports on professors and their tasks.
+
+
+
+610. Students should be able to view reports on LB's.
+
+
+
+620. Students should be able to view reports on module elements offered in a selected semester.
+
