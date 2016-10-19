@@ -1,5 +1,7 @@
 2016-10-19 M1 - Meeting
 
+Marvin:
+
 (Wo kommen daten von Modulen her? - Modul-templates für Semester mit Versionen)
 
 parallel mehrere prüfungsordungen planen
@@ -10,3 +12,18 @@ Konfiguration der aufgrund Qualifikation (Kompetenzmatrix) und Verfügbarkeit (m
 Variabler wert für SWS (hälfte minimal)
 
 aufwand in time schedule
+
+
+Anna:
+
+Überlegung Stundenplan implementieren (Zeit, Raum Gruppe Zuweisung)
+
+Semesterplanung bedeutet Ressoursenplanung Zuweisung
+
+aufwandschätzen  + auf die dauen verteilen
+
+requirements ergänzen in Bezug auf Wahlfächer
+
+Zuordnung SPO zu modul VS reale modul
+
+Man muss parallel mehrere Stupo's planen können
