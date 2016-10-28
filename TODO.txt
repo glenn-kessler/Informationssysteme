@@ -20,6 +20,7 @@ In Progress
 
 [ ] requirement erstellen mehrere Stupo's parallel planen zu können
 
+[ ] requirement formulieren gesamt-SWS in stored procedure berechnen
 
 Backlog
 
