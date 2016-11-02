@@ -1,0 +1,6 @@
+M1 (after “Requirement collection and analysis”):
+1. documentation of group structure
+2. mission statement & mission objectives
+3. time schedule
+4. user views (use cases)
+5. list of requirements (structured, sorted, numbered)
