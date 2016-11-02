@@ -1,0 +1,8 @@
+Entity Name,Multiplicity,Relationship,Multiplicity,Entity Name
+,,,,
+Prof,1,erfüllt,0?*,Aufgabe
+Dozent,*,liest,*,Modulelement
+Dozent,1,prüft,*,Student
+Student,*,besucht,*,Modulelement
+Modul,1,besteht aus,1?*,Modulelement
+SPO,1,besteht aus,1?*,Modul
