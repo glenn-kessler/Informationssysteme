@@ -1,0 +1,4 @@
+M3 (after “Database design”):
+1. conceptual data model in CASE-tool
+2. logical data model
+3. proof that all relations are in BCNF or explanation why not
