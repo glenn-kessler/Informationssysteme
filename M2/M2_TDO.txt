@@ -1,0 +1,4 @@
+M2 (during “Database design”):
+1. conceptual data model on paper (Chen notation)
+2. list of all relevant entities and relationships for each
+user view
