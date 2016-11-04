@@ -32,3 +32,7 @@ Optional
 
 - Req: 300: Business process schedule planning
 - Req: 310: Business process schedule reporting
+
+Registration neuer Benutzer in Track+
+Einsatz von Track+ zum Projektmanagement inklussive Zeiterfassung
+https://wwwitrt3.hs-esslingen.de/track/logoff.action?logOff=true
