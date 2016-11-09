@@ -5,13 +5,3 @@ Dozent,1,prüft,*,Student
 Student,*,besucht,*,Modulelement
 Modul,1,besteht aus,1..*,Modulelement
 SPO,1,besteht aus,1..*,Modul
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,<
