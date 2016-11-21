@@ -1,4 +1,4 @@
-﻿Glossar
+Glossar
 ReqNo28. Each modelling element (entity, role, constraint) has to have a description defining the meaning of the entity precisely to avoid misunderstandings.
 SPO (Studien- und Prüfungsordnung, examination regulations) ist eine Sammlung sämtlicher allgemeinen und studiengangsprezifischen Regelungen für alle Fakultäten und Studiengänge (Bachelor und Master) der Hochschule Esslingen.
 
