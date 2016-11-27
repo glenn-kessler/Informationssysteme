@@ -1,0 +1,13 @@
+Boce-Codd_proof
+
+ModulElement Dozent Subgroup Veranstaltung
+└------------┴------┴--------↑
+
+Veranstaltung Raum Zeit
+└-------------↑----↑
+↑-------------┴----┘
+
+
+Raum Zeit Deputat
+└----┴----↑
+
