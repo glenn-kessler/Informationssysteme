@@ -88,12 +88,10 @@ FROM TD_SPO
 GROUP BY Studiengang
 ^
 
-INSERT INTO GLKEIT00_MODUL
-SELECT DISTINCT Modulnr, Teilgebiet, Modulname
-FROM TD_SPO
-^
 
-INSERT INTO GLKEIT00_MODUL_SPO
-SELECT Modulnr, Teilgebiet, Studiengang, Semester, Credits
-FROM TD_SPO
+INSERT INTO GLKEIT00_MODUL (ModulID, Teilgebiet, Modultitel)
+	SELECT NEXT VALUE FOR GLKEIT00_MODUL_SEQ, Teilgebiet, Modulname
+FROM TD_SPO as s
+WHERE Teilgebiet is not null
+GROUP by Teilgebiet, Modulname
 ^
