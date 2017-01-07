@@ -1,147 +1,151 @@
 insert into STUDENT.GLKEIT00_ZEITSEMESTER (ZEITSEMESTERID)
-values
-('SS11'),
-('WS11'),
-('SS12'),
-('WS12')
-^
-
+	values
+	('SS11'),
+	('WS11'),
+	('SS12'),
+	('WS12')
+	^
 INSERT INTO GLKEIT00_FAKULTAET
-SELECT Fakultaet
-FROM TD_DOZENTEN as td
-WHERE td.Fakultaet is not NULL
-GROUP by td.Fakultaet
-^
-
+	SELECT Fakultaet
+	FROM TD_DOZENTEN as td
+	WHERE td.Fakultaet is not NULL
+	GROUP by td.Fakultaet
+	^
 INSERT INTO GLKEIT00_DOZENT
-SELECT PRUEFERNUMMER, DOZENT, NULL, Fakultaet
-FROM TD_DOZENTEN as td
-WHERE td.Typ1 is not NULL
-^
-
+	SELECT PRUEFERNUMMER, DOZENT, NULL, Fakultaet
+	FROM TD_DOZENTEN as td
+	WHERE td.Typ1 is not NULL
+	^
 INSERT INTO STUDENT.GLKEIT00_PROF
-SELECT PRUEFERNUMMER, DOZENT, TO_DATE(Typ1_Seit, 'DD.MM.YYYY')
-From
-(
-        SELECT PRUEFERNUMMER, DOZENT, Typ1, Typ1_Seit
-        FROM STUDENT.TD_DOZENTEN as td_doz
-	WHERE ((td_doz.Typ1 = 'P' and td_doz.Typ2 is NULL) or (td_doz.Typ1 = 'P' and td_doz.Typ2 = 'LB'))
-)
-^
-
+	SELECT PRUEFERNUMMER, DOZENT, TO_DATE(Typ1_Seit, 'DD.MM.YYYY')
+	From
+	(
+		SELECT PRUEFERNUMMER, DOZENT, Typ1, Typ1_Seit
+		FROM STUDENT.TD_DOZENTEN as td_doz
+		WHERE ((td_doz.Typ1 = 'P' and td_doz.Typ2 is NULL) or (td_doz.Typ1 = 'P' and td_doz.Typ2 = 'LB'))
+	)
+	^
 INSERT INTO STUDENT.GLKEIT00_PROF
-SELECT PRUEFERNUMMER, DOZENT, TO_DATE(Typ2_Seit, 'DD.MM.YYYY')
-From
-(
-        SELECT PRUEFERNUMMER, DOZENT, Typ2, Typ2_Seit
-        FROM STUDENT.TD_DOZENTEN as td_doz
-	WHERE ( td_doz.Typ1 = 'LB' and td_doz.Typ2 = 'P' )
-)
-^
-
+	SELECT PRUEFERNUMMER, DOZENT, TO_DATE(Typ2_Seit, 'DD.MM.YYYY')
+	From
+	(
+		SELECT PRUEFERNUMMER, DOZENT, Typ2, Typ2_Seit
+		FROM STUDENT.TD_DOZENTEN as td_doz
+		WHERE ( td_doz.Typ1 = 'LB' and td_doz.Typ2 = 'P' )
+	)
+	^
 INSERT INTO STUDENT.GLKEIT00_LB
-SELECT PRUEFERNUMMER, 'SS11', DOZENT, TO_DATE(Typ1_Seit, 'DD.MM.YYYY')
-From
-(
-        SELECT PRUEFERNUMMER, DOZENT, Typ1, Typ2, Typ1_Seit
-        FROM STUDENT.TD_DOZENTEN as td_doz
-        WHERE ((td_doz.Typ1 = 'LB' and td_doz.Typ2 is NULL) or (td_doz.Typ1 = 'LB' and td_doz.Typ2 = 'P'))
-)
-^
-
+	SELECT PRUEFERNUMMER, 'SS11', DOZENT, TO_DATE(Typ1_Seit, 'DD.MM.YYYY')
+	From
+	(
+		SELECT PRUEFERNUMMER, DOZENT, Typ1, Typ2, Typ1_Seit
+		FROM STUDENT.TD_DOZENTEN as td_doz
+		WHERE ((td_doz.Typ1 = 'LB' and td_doz.Typ2 is NULL) or (td_doz.Typ1 = 'LB' and td_doz.Typ2 = 'P'))
+	)
+	^
 INSERT INTO STUDENT.GLKEIT00_LB
-SELECT PRUEFERNUMMER, 'SS11', DOZENT, TO_DATE(Typ2_Seit, 'DD.MM.YYYY')
-From
-(
-        SELECT PRUEFERNUMMER, DOZENT, Typ2, Typ2_Seit
-        FROM STUDENT.TD_DOZENTEN as td_doz
-	WHERE ( td_doz.Typ1 = 'P' and td_doz.Typ2 = 'LB' )
-)
-^
-
+	SELECT PRUEFERNUMMER, 'SS11', DOZENT, TO_DATE(Typ2_Seit, 'DD.MM.YYYY')
+	From
+	(
+		SELECT PRUEFERNUMMER, DOZENT, Typ2, Typ2_Seit
+		FROM STUDENT.TD_DOZENTEN as td_doz
+		WHERE ( td_doz.Typ1 = 'P' and td_doz.Typ2 = 'LB' )
+	)
+	^
 INSERT INTO GLKEIT00_PROF_ZEITSEMESTER
-SELECT DEPUTAT_SS11, PRUEFERNUMMER, 'SS11', DOZENT
-FROM
-(
-SELECT PRUEFERNUMMER, DOZENT, DEPUTAT_SS11, DEPUTAT_WS11
-FROM TD_DOZENTEN as td
-JOIN GLKEIT00_PROF p ON td.PRUEFERNUMMER = p.DOZENTID and td.DOZENT = p.LASTNAME
-WHERE (td.DEPUTAT_SS11 is not NULL)
-)
-^
-
-
+	SELECT DEPUTAT_SS11, PRUEFERNUMMER, 'SS11', DOZENT
+	FROM
+	(
+	SELECT PRUEFERNUMMER, DOZENT, DEPUTAT_SS11, DEPUTAT_WS11
+	FROM TD_DOZENTEN as td
+	JOIN GLKEIT00_PROF p ON td.PRUEFERNUMMER = p.DOZENTID and td.DOZENT = p.LASTNAME
+	WHERE (td.DEPUTAT_SS11 is not NULL)
+	)
+	^
 INSERT INTO GLKEIT00_PROF_ZEITSEMESTER
-SELECT DEPUTAT_WS11, PRUEFERNUMMER, 'WS11', DOZENT
-FROM
-(
-SELECT PRUEFERNUMMER, DOZENT, DEPUTAT_SS11, DEPUTAT_WS11
-FROM TD_DOZENTEN as td
-JOIN GLKEIT00_PROF p ON td.PRUEFERNUMMER = p.DOZENTID and td.DOZENT = p.LASTNAME
-WHERE (td.DEPUTAT_WS11 is not NULL)
-)
-^
-
+	SELECT DEPUTAT_WS11, PRUEFERNUMMER, 'WS11', DOZENT
+	FROM
+	(
+	SELECT PRUEFERNUMMER, DOZENT, DEPUTAT_SS11, DEPUTAT_WS11
+	FROM TD_DOZENTEN as td
+	JOIN GLKEIT00_PROF p ON td.PRUEFERNUMMER = p.DOZENTID and td.DOZENT = p.LASTNAME
+	WHERE (td.DEPUTAT_WS11 is not NULL)
+	)
+	^
 INSERT INTO GLKEIT00_SPO
-SELECT Studiengang, 'IT'
-FROM TD_SPO
-GROUP BY Studiengang
-^
+	SELECT Studiengang, 'IT'
+	FROM TD_STDPL
+	GROUP BY Studiengang
+	^
+INSERT INTO GLKEIT00_MODUL
+	SELECT DISTINCT Studiengang, ModulNr, Teilgebiet, Modulname
+	FROM TD_SPO
+	^
 
+INSERT INTO GLKEIT00_MODUL
+	SELECT
+		t1.studiengang,
+		nextval FOR GLKEIT00_MODUL_SEQ,
+		t1.FACH,
+		t1.FACH
+	FROM TD_STDPL as t1
 
-INSERT INTO GLKEIT00_MODUL (ModulID, Teilgebiet, Modultitel)
-	SELECT NEXT VALUE FOR GLKEIT00_MODUL_SEQ, Teilgebiet, Modulname
-FROM TD_SPO as s
-WHERE Teilgebiet is not null
-GROUP by Teilgebiet, Modulname
-^
+	WHERE NOT EXISTS 
+	(
+		SELECT Teilgebiet
 
-INSERT INTO GLKEIT00_MODUL (ModulID, Teilgebiet, Modultitel)
-SELECT NEXT VALUE FOR GLKEIT00_MODUL_SEQ, S.FACH, S.FACH
-FROM TD_STDPL AS S
-WHERE NOT EXISTS ( SELECT TEILGEBIET FROM GLKEIT00_MODUL AS M WHERE S.FACH = M.TEILGEBIET )
-GROUP by S.FACH
-^
+		from GLKEIT00_MODUL as t2
+	
+		WHERE t1.Fach = t2.Teilgebiet
 
-
-
-
-
-
-
+		AND t1.Studiengang = t2.SPOID
+	)
+	GROUP BY
+		t1.studiengang,
+	 	t1.FACH
+	^
 
 INSERT INTO GLKEIT00_MODUL_SPO
-	SELECT Modulnr, Teilgebiet, Studiengang, Semester, Credits
-FROM TD_SPO
-^
+	SELECT DISTINCT
+		ModulNr,
+		Teilgebiet,
+		Studiengang,
+		Semester,
+		Credits
+	FROM TD_SPO
+	^
 
-INSERT INTO GLKEIT00_VERANSTALTUNG
-SELECT DISTINCT Nr, akadHJ, Fach, Studiengang
-FROM TD_STDPL
-^
+INSERT INTO GLKEIT00_MODUL_SPO (ModulID, Teilgebiet, SPOID, Semester, SWS)
+	SELECT
+		modulid,
+		Teilgebiet,
+		spoid,
+		semester,
+		'2' as SWS
 
+	FROM ( SELECT *
+		FROM TD_STDPL as p
+		JOIN glkeit00_Modul as t1
+		ON t1.Teilgebiet = p.fach
+		AND t1.spoid = p.studiengang
+		)tmp
 
+	WHERE NOT EXISTS 
+	(
+		SELECT DISTINCT Studiengang, ModulNr, Teilgebiet, Modulname
 
---INSERT INTO GLKEIT00_VERANSTALTUNG
+		FROM TD_SPO as s
 
-SELECT DISTINCT Nr, akadHJ, Fach, Studiengang
-FROM TD_STDPL
-WHERE EXISTS (SELECT Teilgebiet FROM GLKEIT00_MODUL_SPO WHERE TD_STDPL.Fach = GLKEIT00_MODUL_SPO.Teilgebiet)
-^
+		WHERE s.Teilgebiet = Teilgebiet
 
-SELECT *
-FROM TD_STDPL as t1
-WHERE NOT EXISTS 
-(
-	SELECT Teilgebiet from GLKEIT00_MODUL_SPO as t2
-	WHERE t1.Fach = t2.Teilgebiet
-)
-^
+		AND s.Studiengang = SPOID
 
-SELECT Fach
-FROM TD_STDPL as t1
-INNER JOIN GLKEIT00_MODUL_SPO as t2
-ON t1.Fach = t2.Teilgebiet^
+		AND s.ModulNr = Modulid
 
-
-
+	)
+	GROUP BY
+		spoid,
+		modulid,
+	 	teilgebiet,
+		semester
+	^
