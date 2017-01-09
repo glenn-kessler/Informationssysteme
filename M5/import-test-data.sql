@@ -116,36 +116,47 @@ INSERT INTO GLKEIT00_MODUL_SPO
 	^
 
 INSERT INTO GLKEIT00_MODUL_SPO (ModulID, Teilgebiet, SPOID, Semester, SWS)
-	SELECT
+	select --table with additional teilgebiete from stdpl with sws
+		modulid
+		, Teilgebiet
+		, spoid
+		, semester
+		, sws
+	from (Select distinct --table with counted sws
 		modulid,
 		Teilgebiet,
 		spoid,
 		semester,
-		'2' as SWS
-
-	FROM ( SELECT *
-		FROM TD_STDPL as p
-		JOIN glkeit00_Modul as t1
-		ON t1.Teilgebiet = p.fach
-		AND t1.spoid = p.studiengang
-		)tmp
-
-	WHERE NOT EXISTS 
+		count(*)*2 as sws
+		from ( select distinct --get modulid where fach and teilgebiet match
+			modulid 
+			, akadhj 
+			, studiengang as spoid
+			, semester
+			, tag 
+			, stunde 
+			, fach as Teilgebiet
+			from TD_STDPL as p
+			JOIN glkeit00_Modul as t1
+			ON t1.Teilgebiet = p.fach
+			AND t1.spoid = p.studiengang
+			where gruppe is NULL  --only resent akadhj and single gruppe
+			and akadhj = 'WS11'
+			or gruppe = 'A'
+		)temp
+	group BY --count same spoid, semester, teilgebiet for sws
+		modulid 
+		, akadhj
+		, spoid
+		, semester
+		, Teilgebiet
+	)tmp2
+	WHERE NOT EXISTS --check if already in modul_spo
 	(
 		SELECT DISTINCT Studiengang, ModulNr, Teilgebiet, Modulname
-
 		FROM TD_SPO as s
-
 		WHERE s.Teilgebiet = Teilgebiet
-
 		AND s.Studiengang = SPOID
-
 		AND s.ModulNr = Modulid
-
 	)
-	GROUP BY
-		spoid,
-		modulid,
-	 	teilgebiet,
-		semester
-	^
+^
