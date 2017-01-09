@@ -176,3 +176,25 @@ join glkeit00_Modul_SPO as t1
 	ON t1.Teilgebiet = p.fach
 	AND t1.spoid = p.studiengang
 	AND t1.semester = p.semester
+
+^
+
+insert into GLKEIT00_HAT (veranstaltungssws, dozentid, veranstaltungsid, lastname)
+select 
+	'2' as veranstaltungssws --assumption every dozent hat one veranstaltung per week
+	, pruefernummer
+	, nr
+	, dozent
+from (	select nr
+					, dozent
+					, pruefernummer 
+				from td_stdpl as stdpl 
+				join glkeit00_veranstaltung as v 
+				on stdpl.nr = v.veranstaltungsid 
+		) as s
+join glkeit00_dozent as d
+	on s.dozent = d.lastname
+	and s.pruefernummer = d.dozentid
+where pruefernummer is not null 
+and nr is not null
+and dozent is not null
