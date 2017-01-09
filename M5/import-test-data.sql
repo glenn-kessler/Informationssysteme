@@ -198,3 +198,17 @@ join glkeit00_dozent as d
 where pruefernummer is not null 
 and nr is not null
 and dozent is not null
+^
+
+insert into GLKEIT00_IST_VERANTWORTLICH (SPOID, MODULID, DOZENTID, LASTNAME, TEILGEBIET)
+select distinct
+	SPOID, MODULID, DOZENTID, LASTNAME, TEILGEBIET
+	from (select * 
+		from td_stdpl as s 
+		join glkeit00_modul_spo as spo 
+		on s.fach = spo.teilgebiet 
+		and s.studiengang = spo.spoid
+	)as temp
+	join glkeit00_dozent as d
+	on d.dozentid = temp.pruefernummer
+	and d.lastname = temp.dozent
