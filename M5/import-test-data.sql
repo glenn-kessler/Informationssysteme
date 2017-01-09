@@ -1,7 +1,10 @@
 insert into STUDENT.GLKEIT00_ZEITSEMESTER (ZEITSEMESTERID)
+	select distinct 
+		akadhj
+	from td_stdpl
+	^
+insert into STUDENT.GLKEIT00_ZEITSEMESTER (ZEITSEMESTERID)
 	values
-	('SS11'),
-	('WS11'),
 	('SS12'),
 	('WS12')
 	^
@@ -160,3 +163,16 @@ INSERT INTO GLKEIT00_MODUL_SPO (ModulID, Teilgebiet, SPOID, Semester, SWS)
 		AND s.ModulNr = Modulid
 	)
 ^
+
+insert into STUDENT.GLKEIT00_Veranstaltung (VERANSTALTUNGSID, ZEITSEMESTERID, MODULID, TEILGEBIET, SPOID, SEMESTER )
+select nr as VERANSTALTUNGSID
+	, akadhj as zeitsemesterID
+	, MODULID
+        , fach as teilgebiet
+        , studiengang as spoid
+        , t1.SEMESTER
+from td_stdpl as p
+join glkeit00_Modul_SPO as t1
+	ON t1.Teilgebiet = p.fach
+	AND t1.spoid = p.studiengang
+	AND t1.semester = p.semester
