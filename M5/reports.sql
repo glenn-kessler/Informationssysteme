@@ -40,12 +40,21 @@ group by dozentid
 /*******************************************
 ** 20. list all module elements for a degree
 *******************************************/
-
+SELECT Teilgebiet, Semester
+FROM glkeit00_VERANSTALTUNG
+WHERE SPOID = 'SWB' or SPOID = 'IT'
+GROUP BY Teilgebiet, Semester
+^
 
 /*******************************************
 ** 21. list external lecturers (SWS+address)
 *******************************************/
-
+--TODO!!!
+SELECT *
+FROM glkeit00_LB as LB
+LEFT OUTER JOIN glkeit00_PROF as PROF
+ON LB.DozentID = PROF.DozentID
+^
 
 /*******************************************
 ** 22. provided services
