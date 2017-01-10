@@ -1,0 +1,4 @@
+Ein Relationenschema ist genau dann in BCNF, wenn jede Determinante (Attributmenge, von der andere Attribute funktional abhängen) ein Kandidatschlüssel ist.
+Unterschied zwischen 3NF und BCNF ist, dass für eine funktionale Abhängigkeit A->B, 3NF diese Abhängigkeit in einer Relation erlaubt ,
+wenn B ein Primärschlüsselattribut ist und A ist kein Kandidatenschlüssel.
+Während BCNF darauf besteht, dass für diese Abhängigkeit A ein Kandidatenschlüssel sein muss.

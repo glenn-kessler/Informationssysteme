@@ -1,0 +1,19 @@
+Test Cases
+1. To maintain (enter, update, and delete) data on professors and their tasks for a selected semester.
+2. To maintain (enter, update, and delete) data on required work load (Deputat) for each professor (full time or part time) for a selected semester.
+3. To maintain (enter, update, and delete) data on external lecturers, their SWS for a selected semester and their addresses.
+4. To maintain (enter, update, and delete) data on module elements offered in a selected semester for a selected degree (Studiengang).
+5. To maintain (enter, update, and delete) data on services provided, i.e. list of module elements taught by IT professors for a different department(name of module element, name  of the lecturer, SWS, department which the service is provided for).
+6. To maintain (enter, update, and delete) data on services used, i.e. list of module elements taught to IT students by a lecturer of another department (name of module element, name of the lecturer, SWS, department which the service is provided by).
+
+7. To display a list of all the docents employed by IT department.
+8. To display a professor' data (name und the lectures he teaches).
+9. To display a external lectures' data (name und the lectures he teaches).
+10. To query/to report a list of task for each professor for a selected semester.
+11. To query a required work load for each professor for a selected semester.
+12. To query/to report a list of all the external lecturers, their SWS for a selected academic half year and their addresses.
+13. To query/to report a list of all the module elements offered in a selected semester for a selected degree (Studiengang).
+14. To query/to report a list of all the services taught by IT professors for a different department (name of module element, name of the lecturer,
+SWS, department which the service is provided for).
+15. To query/to report a list of all the services taught to IT students by a lecturer of another department (name of module element, name of the
+lecturer, SWS, department which the service is provided by).
