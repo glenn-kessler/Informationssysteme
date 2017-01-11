@@ -189,30 +189,52 @@ join glkeit00_Modul_SPO as t1
   AND t1.semester = p.semester
 ^
 
-insert into GLKEIT00_HAT (veranstaltungssws, dozentid, veranstaltungsid, lastname)
+insert into GLKEIT00_HAT (veranstaltungssws, dozentid, RID, lastname)
 -- Annahmen:
 -- Wenn Raum+Zeit gleich für unterschiedliche ...
 -- ... Fächer, dann handelt es sich um eine zweiwöchige Veranstaltung
 -- ... Dozenten, dann handelt es sich um EINE Veranstaltung die sich zwei Dozenten teilen (d.h. halbes Deputat)
-select 
-	'2' as veranstaltungssws --assumption every dozent hat one veranstaltung per week
-	, pruefernummer
-	, nr
-	, dozent
-from (	select nr
-					, dozent
-					, pruefernummer 
-				from td_stdpl as stdpl 
-				join glkeit00_veranstaltung as v 
-				on stdpl.nr = v.veranstaltungsid 
-		) as s
-join glkeit00_dozent as d
-	on s.dozent = d.lastname
-	and s.pruefernummer = d.dozentid
+select veranstaltungssws,pruefernummer,RID,dozent
+        from
+	(select RID,dozent,pruefernummer,2 / divisor as veranstaltungssws --Deputat je Dozent pro Veranstaltung
+                from
+	      	( select 	nextval FOR GLKEIT00_HAT_SEQ as RID
+                                , std.dozent
+                                , std.pruefernummer
+                                , divisor 
+                        from
+		      	(select akadhj,tag,stunde,raum -- Raum+Zeit
+                        		,count(*) as divisor -- zähle Dozenten zur gleichen Raum+Zeit
+                        	from
+			      	( select akadhj,tag,stunde,raum -- Raum+Zeit 
+                                        	,pruefernummer,dozent -- +Dozent
+                                        from td_stdpl
+                                	group by akadhj,tag,stunde,raum -- Raum+Zeit 
+                                        	,pruefernummer,dozent -- +Dozent
+                                )tmp
+                                group by akadhj,tag,stunde,raum -- Raum+Zeit
+                        )D_pro_RZ -- Dozent pro Raum+Zeit
+                        join td_stdpl as std
+                        on std.akadhj = D_pro_RZ.akadhj
+                        and std.tag = D_pro_RZ.tag
+                        and std.stunde = D_pro_RZ.stunde
+                        and std.raum = D_pro_RZ.raum
+		) as stdpl 
+                join glkeit00_veranstaltung as v on stdpl.nr = v.veranstaltungsid
+        ) as s
+        join glkeit00_dozent as d
+        on s.dozent = d.lastname
+        and s.pruefernummer = d.dozentid
 where pruefernummer is not null 
 and nr is not null
 and dozent is not null
 ^
+
+
+
+
+
+
 
 insert into GLKEIT00_IST_VERANTWORTLICH (SPOID, MODULID, DOZENTID, LASTNAME, TEILGEBIET)
 select distinct
