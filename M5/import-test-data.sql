@@ -190,6 +190,10 @@ join glkeit00_Modul_SPO as t1
 ^
 
 insert into GLKEIT00_HAT (veranstaltungssws, dozentid, veranstaltungsid, lastname)
+-- Annahmen:
+-- Wenn Raum+Zeit gleich für unterschiedliche ...
+-- ... Fächer, dann handelt es sich um eine zweiwöchige Veranstaltung
+-- ... Dozenten, dann handelt es sich um EINE Veranstaltung die sich zwei Dozenten teilen (d.h. halbes Deputat)
 select 
 	'2' as veranstaltungssws --assumption every dozent hat one veranstaltung per week
 	, pruefernummer
