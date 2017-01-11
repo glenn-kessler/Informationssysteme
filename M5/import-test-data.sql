@@ -144,8 +144,8 @@ INSERT INTO GLKEIT00_MODUL_SPO (ModulID, Teilgebiet, SPOID, Semester, SWS)
 			ON t1.Teilgebiet = p.fach
 			AND t1.spoid = p.studiengang
 			where gruppe is NULL  --only resent akadhj and single gruppe
-			and akadhj = 'WS11'
-			or gruppe = 'A'
+				and ( akadhj = 'WS11' or akadhj = 'SS11' ) --fetch all Modules, independent of winter or summer
+		      	or gruppe = 'A'
 		)temp
 	group BY --count same spoid, semester, teilgebiet for sws
 		modulid 
