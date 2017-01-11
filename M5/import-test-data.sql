@@ -56,17 +56,17 @@ INSERT INTO STUDENT.GLKEIT00_LB
 	)
 	^
 INSERT INTO GLKEIT00_PROF_ZEITSEMESTER
-	SELECT DEPUTAT_SS11, PRUEFERNUMMER, 'SS11', DOZENT
+	SELECT DEPUTAT_SS11, PRUEFERNUMMER, 'SS11', DOZENT, KONTO_WS10
 	FROM
 	(
-	SELECT PRUEFERNUMMER, DOZENT, DEPUTAT_SS11, DEPUTAT_WS11
+	SELECT PRUEFERNUMMER, DOZENT, DEPUTAT_SS11, DEPUTAT_WS11, KONTO_WS10 
 	FROM TD_DOZENTEN as td
 	JOIN GLKEIT00_PROF p ON td.PRUEFERNUMMER = p.DOZENTID and td.DOZENT = p.LASTNAME
 	WHERE (td.DEPUTAT_SS11 is not NULL)
 	)
 	^
 INSERT INTO GLKEIT00_PROF_ZEITSEMESTER
-	SELECT DEPUTAT_WS11, PRUEFERNUMMER, 'WS11', DOZENT
+	SELECT DEPUTAT_WS11, PRUEFERNUMMER, 'WS11', DOZENT, 0
 	FROM
 	(
 	SELECT PRUEFERNUMMER, DOZENT, DEPUTAT_SS11, DEPUTAT_WS11
@@ -144,8 +144,8 @@ INSERT INTO GLKEIT00_MODUL_SPO (ModulID, Teilgebiet, SPOID, Semester, SWS)
 			ON t1.Teilgebiet = p.fach
 			AND t1.spoid = p.studiengang
 			where gruppe is NULL  --only resent akadhj and single gruppe
-			and akadhj = 'WS11'
-			or gruppe = 'A'
+				and ( akadhj = 'WS11' or akadhj = 'SS11' ) --fetch all Modules, independent of winter or summer
+		      	or gruppe = 'A'
 		)temp
 	group BY --count same spoid, semester, teilgebiet for sws
 		modulid 
