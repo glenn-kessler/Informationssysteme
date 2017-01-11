@@ -165,19 +165,28 @@ INSERT INTO GLKEIT00_MODUL_SPO (ModulID, Teilgebiet, SPOID, Semester, SWS)
 ^
 
 insert into STUDENT.GLKEIT00_Veranstaltung (VERANSTALTUNGSID, ZEITSEMESTERID, MODULID, TEILGEBIET, SPOID, SEMESTER )
-select nr as VERANSTALTUNGSID
+select 
+	nextval FOR GLKEIT00_VERANSTALTUNG_SEQ as VERANSTALTUNGSID
 	, akadhj as zeitsemesterID
 	, MODULID
-        , fach as teilgebiet
+				, fach as teilgebiet
         , studiengang as spoid
         , t1.SEMESTER
-from td_stdpl as p
+from (select distinct
+	akadhj
+	, fach
+	, studiengang
+	, semester
+	, tag
+	, stunde
+	, pruefernummer
+	, dozent
+	from TD_stdpl
+	) as p
 join glkeit00_Modul_SPO as t1
-	ON t1.Teilgebiet = p.fach
-	AND t1.spoid = p.studiengang
-	AND t1.semester = p.semester
-
-^
+  ON t1.Teilgebiet = p.fach
+  AND t1.spoid = p.studiengang
+  AND t1.semester = p.semester
 
 insert into GLKEIT00_HAT (veranstaltungssws, dozentid, veranstaltungsid, lastname)
 select 
@@ -212,3 +221,4 @@ select distinct
 	join glkeit00_dozent as d
 	on d.dozentid = temp.pruefernummer
 	and d.lastname = temp.dozent
+^
