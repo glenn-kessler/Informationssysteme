@@ -187,6 +187,7 @@ join glkeit00_Modul_SPO as t1
   ON t1.Teilgebiet = p.fach
   AND t1.spoid = p.studiengang
   AND t1.semester = p.semester
+^
 
 insert into GLKEIT00_HAT (veranstaltungssws, dozentid, veranstaltungsid, lastname)
 select 
