@@ -189,21 +189,44 @@ join glkeit00_Modul_SPO as t1
   ON t1.Teilgebiet = p.fach
   AND t1.spoid = p.studiengang
   AND t1.semester = p.semester
+group by akadhj
+	, MODULID
+	, fach
+        , studiengang
+        , t1.SEMESTER
+	, RAUM, TAG, STUNDE -- Raum+Zeit
 ^
 
-insert into GLKEIT00_HAT (veranstaltungssws, dozentid, RID, lastname)
+insert into glkeit00_HAT ( VERANSTALTUNGSSWS, DOZENTID, LASTNAME, VERANSTALTUNGSID, TEILGEBIET, ZEITSEMESTERID, RAUM, TAG, STUNDE)
 -- Annahmen:
 -- Wenn Raum+Zeit gleich für unterschiedliche ...
 -- ... Fächer, dann handelt es sich um eine zweiwöchige Veranstaltung
 -- ... Dozenten, dann handelt es sich um EINE Veranstaltung die sich zwei Dozenten teilen (d.h. halbes Deputat)
-select veranstaltungssws,pruefernummer,RID,dozent
-        from
-	(select RID,dozent,pruefernummer,2 / divisor as veranstaltungssws --Deputat je Dozent pro Veranstaltung
-                from
-	      	( select 	nextval FOR GLKEIT00_HAT_SEQ as RID
-                                , std.dozent
+select	VERANSTALTUNGSSWS, DOZENTID, LASTNAME, VERANSTALTUNGSID, fach as TEILGEBIET, akadhj as ZEITSEMESTERID, RAUM, TAG, STUNDE
+	from 
+	(	
+		select 	distinct
+			2 / divisor as VERANSTALTUNGSSWS --Deputat je Dozent pro Veranstaltung
+			, stdpl.pruefernummer
+			, stdpl.dozent
+			, veranstaltungsid
+			, stdpl.fach
+			, stdpl.akadhj
+			, stdpl.raum
+			, stdpl.tag
+			, stdpl.stunde
+		from (
+			select
+				divisor 
                                 , std.pruefernummer
-                                , divisor 
+                                , std.dozent
+				, std.fach
+				, std.studiengang
+				, std.semester
+				, std.akadhj
+				, std.raum
+				, std.tag
+				, std.stunde
                         from
 		      	(select akadhj,tag,stunde,raum -- Raum+Zeit
                         		,count(*) as divisor -- zähle Dozenten zur gleichen Raum+Zeit
@@ -221,15 +244,21 @@ select veranstaltungssws,pruefernummer,RID,dozent
                         and std.tag = D_pro_RZ.tag
                         and std.stunde = D_pro_RZ.stunde
                         and std.raum = D_pro_RZ.raum
-		) as stdpl 
-                join glkeit00_veranstaltung as v on stdpl.nr = v.veranstaltungsid
-        ) as s
-        join glkeit00_dozent as d
+		) as stdpl
+		join GLKEIT00_Veranstaltung as v
+		on stdpl.akadhj = v.ZEITSEMESTERID
+		and stdpl.fach = v.TEILGEBIET
+		and stdpl.studiengang = v.spoid
+		and stdpl.SEMESTER = v.SEMESTER
+		and stdpl.raum = v.RAUM
+		and stdpl.TAG = v.TAG
+		and stdpl.STUNDE = v.STUNDE
+	) as s
+	join glkeit00_dozent as d
         on s.dozent = d.lastname
         and s.pruefernummer = d.dozentid
-where pruefernummer is not null 
-and nr is not null
-and dozent is not null
+	where pruefernummer is not null 
+	and dozent is not null
 ^
 
 
