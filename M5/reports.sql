@@ -11,7 +11,7 @@
 select 
     res.dozentid
     , res.lastname
-    , sum(sumVeranstaltungsSWS+coalesce(sumAufgabenSWS, 0)) as summe
+    , sum(sumVeranstaltungsSWS+coalesce(sumAufgabenSWS, 0) - kontostandvorsemester) as summe
     , deputat
     , res.zeitsemesterid
 from (
@@ -19,6 +19,7 @@ from (
     , zsem.lastname
     , sumVeranstaltungsSWS
     , deputat
+    , kontostandvorsemester
     , zsem.zeitsemesterid 
   from (
     select 
