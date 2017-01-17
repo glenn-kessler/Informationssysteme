@@ -1,5 +1,16 @@
+connect to labor;
+--
+-- drop Sequences from DDL-lecture_planner.sql
 DROP SEQUENCE glkeit00_MODUL_SEQ;
 DROP SEQUENCE glkeit00_VERANSTALTUNG_SEQ;
+--
+-- drop Trigger from checks.sql
+drop TRIGGER TRG_DEPUTAT;
+drop TRIGGER TRG_UPD_DEPUTAT;
+drop TRIGGER TRG_DEPUTAT_MIN;
+drop TRIGGER TRG_UPD_DEPUTAT_MIN;
+--
+---- drop Tables from DDL-lecture_planner.sql
 DROP TABLE glkeit00_AUFGABEN;
 DROP TABLE glkeit00_DOZENT;
 DROP TABLE glkeit00_FAKULTAET;
@@ -13,3 +24,5 @@ DROP TABLE glkeit00_PROF_ZEITSEMESTER;
 DROP TABLE glkeit00_SPO;
 DROP TABLE glkeit00_VERANSTALTUNG;
 DROP TABLE glkeit00_ZEITSEMESTER;
+
+CONNECT RESET;
