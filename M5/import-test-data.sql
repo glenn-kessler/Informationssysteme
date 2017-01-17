@@ -1,3 +1,5 @@
+connect to labor;
+
 insert into STUDENT.GLKEIT00_ZEITSEMESTER (ZEITSEMESTERID)
 	select distinct 
 		akadhj
@@ -280,3 +282,5 @@ select distinct
 	on d.dozentid = temp.pruefernummer
 	and d.lastname = temp.dozent
 ;
+
+connect reset;
