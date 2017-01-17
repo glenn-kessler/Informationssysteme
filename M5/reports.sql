@@ -7,33 +7,53 @@
 /*******************************************
 ** 19. deputatkonto
 *******************************************/
+
 select 
-  dozentid
-  , lastname
-  , sum(bilanz) as bilanz
+    res.dozentid
+    , res.lastname
+    , sum(sumVeranstaltungsSWS+coalesce(sumAufgabenSWS, 0)) as summe
+    , deputat
+    , res.zeitsemesterid
 from (
   select zsem.dozentid
     , zsem.lastname
-    , (sum - deputat) as bilanz
+    , sumVeranstaltungsSWS
+    , deputat
     , zsem.zeitsemesterid 
   from (
     select 
-    dozentid
-    , lastname
-    , sum(veranstaltungssws) as sum
-    , zeitsemesterid
+    h.dozentid
+    , h.lastname
+    , sum(veranstaltungssws) as sumVeranstaltungssws
+    , h.zeitsemesterid
     from glkeit00_hat as h
     join glkeit00_veranstaltung as v
     on h.veranstaltungsid = v.veranstaltungsid
-    group by dozentid, lastname, zeitsemesterid
+    group by dozentid, lastname, h.zeitsemesterid
   )tmp
   join glkeit00_prof_zeitsemester as zsem
   on tmp.zeitsemesterid = zsem.zeitsemesterid
   and tmp.dozentid = zsem.dozentid
   and tmp.lastname = zsem.lastname
 )res
-group by dozentid
-  , lastname
+full outer join (select 
+    dozentid
+    , lastname
+    , zeitsemesterid
+    , sum(aufgabensws) as sumAufgabensws
+    from glkeit00_aufgaben 
+    group by dozentid
+      , lastname
+      , zeitsemesterid
+    )a
+on a.dozentid = res.dozentid
+and a.lastname = res.lastname
+and a.zeitsemesterid = res.zeitsemesterid
+group by 
+    res.dozentid
+    , res.lastname
+    , deputat
+    , res.zeitsemesterid
 ^
 
 
