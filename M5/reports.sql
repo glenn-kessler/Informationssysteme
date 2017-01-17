@@ -199,6 +199,3 @@ on fak.teilgebiet = tmp.teilgebiet
 where fak.modul_fak = 'IT'
 and tmp.dozent_fak not like 'IT'
 
-/*******************************************
-** 24. 
-*******************************************/
