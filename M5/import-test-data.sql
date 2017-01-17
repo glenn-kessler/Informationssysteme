@@ -2,23 +2,23 @@ insert into STUDENT.GLKEIT00_ZEITSEMESTER (ZEITSEMESTERID)
 	select distinct 
 		akadhj
 	from td_stdpl
-	^
+	;
 insert into STUDENT.GLKEIT00_ZEITSEMESTER (ZEITSEMESTERID)
 	values
 	('SS12'),
 	('WS12')
-	^
+	;
 INSERT INTO GLKEIT00_FAKULTAET
 	SELECT Fakultaet
 	FROM TD_DOZENTEN as td
 	WHERE td.Fakultaet is not NULL
 	GROUP by td.Fakultaet
-	^
+	;
 INSERT INTO GLKEIT00_DOZENT
 	SELECT PRUEFERNUMMER, DOZENT, NULL, Fakultaet
 	FROM TD_DOZENTEN as td
 	WHERE td.Typ1 is not NULL
-	^
+	;
 INSERT INTO STUDENT.GLKEIT00_PROF
 	SELECT PRUEFERNUMMER, DOZENT, TO_DATE(Typ1_Seit, 'DD.MM.YYYY')
 	From
@@ -27,7 +27,7 @@ INSERT INTO STUDENT.GLKEIT00_PROF
 		FROM STUDENT.TD_DOZENTEN as td_doz
 		WHERE ((td_doz.Typ1 = 'P' and td_doz.Typ2 is NULL) or (td_doz.Typ1 = 'P' and td_doz.Typ2 = 'LB'))
 	)
-	^
+	;
 INSERT INTO STUDENT.GLKEIT00_PROF
 	SELECT PRUEFERNUMMER, DOZENT, TO_DATE(Typ2_Seit, 'DD.MM.YYYY')
 	From
@@ -36,7 +36,7 @@ INSERT INTO STUDENT.GLKEIT00_PROF
 		FROM STUDENT.TD_DOZENTEN as td_doz
 		WHERE ( td_doz.Typ1 = 'LB' and td_doz.Typ2 = 'P' )
 	)
-	^
+	;
 INSERT INTO STUDENT.GLKEIT00_LB
 	SELECT PRUEFERNUMMER, 'SS11', DOZENT, TO_DATE(Typ1_Seit, 'DD.MM.YYYY')
 	From
@@ -45,7 +45,7 @@ INSERT INTO STUDENT.GLKEIT00_LB
 		FROM STUDENT.TD_DOZENTEN as td_doz
 		WHERE ((td_doz.Typ1 = 'LB' and td_doz.Typ2 is NULL) or (td_doz.Typ1 = 'LB' and td_doz.Typ2 = 'P'))
 	)
-	^
+	;
 INSERT INTO STUDENT.GLKEIT00_LB
 	SELECT PRUEFERNUMMER, 'SS11', DOZENT, TO_DATE(Typ2_Seit, 'DD.MM.YYYY')
 	From
@@ -54,7 +54,7 @@ INSERT INTO STUDENT.GLKEIT00_LB
 		FROM STUDENT.TD_DOZENTEN as td_doz
 		WHERE ( td_doz.Typ1 = 'P' and td_doz.Typ2 = 'LB' )
 	)
-	^
+	;
 INSERT INTO GLKEIT00_PROF_ZEITSEMESTER
 	SELECT DEPUTAT_SS11, PRUEFERNUMMER, 'SS11', DOZENT, KONTO_WS10
 	FROM
@@ -64,7 +64,7 @@ INSERT INTO GLKEIT00_PROF_ZEITSEMESTER
 	JOIN GLKEIT00_PROF p ON td.PRUEFERNUMMER = p.DOZENTID and td.DOZENT = p.LASTNAME
 	WHERE (td.DEPUTAT_SS11 is not NULL)
 	)
-	^
+	;
 INSERT INTO GLKEIT00_PROF_ZEITSEMESTER
 	SELECT DEPUTAT_WS11, PRUEFERNUMMER, 'WS11', DOZENT, 0
 	FROM
@@ -74,16 +74,16 @@ INSERT INTO GLKEIT00_PROF_ZEITSEMESTER
 	JOIN GLKEIT00_PROF p ON td.PRUEFERNUMMER = p.DOZENTID and td.DOZENT = p.LASTNAME
 	WHERE (td.DEPUTAT_WS11 is not NULL)
 	)
-	^
+	;
 INSERT INTO GLKEIT00_SPO
 	SELECT Studiengang, 'IT'
 	FROM TD_STDPL
 	GROUP BY Studiengang
-	^
+	;
 INSERT INTO GLKEIT00_MODUL
 	SELECT DISTINCT Studiengang, ModulNr, Teilgebiet, Modulname
 	FROM TD_SPO
-	^
+	;
 
 INSERT INTO GLKEIT00_MODUL
 	SELECT
@@ -106,7 +106,7 @@ INSERT INTO GLKEIT00_MODUL
 	GROUP BY
 		t1.studiengang,
 	 	t1.FACH
-	^
+	;
 
 INSERT INTO GLKEIT00_MODUL_SPO
 	SELECT DISTINCT
@@ -116,7 +116,7 @@ INSERT INTO GLKEIT00_MODUL_SPO
 		Semester,
 		Credits
 	FROM TD_SPO
-	^
+	;
 
 INSERT INTO GLKEIT00_MODUL_SPO (ModulID, Teilgebiet, SPOID, Semester, SWS)
 	select --table with additional teilgebiete from stdpl with sws
@@ -162,7 +162,7 @@ INSERT INTO GLKEIT00_MODUL_SPO (ModulID, Teilgebiet, SPOID, Semester, SWS)
 		AND s.Studiengang = SPOID
 		AND s.ModulNr = Modulid
 	)
-^
+;
 
 insert into STUDENT.GLKEIT00_Veranstaltung (VERANSTALTUNGSID, ZEITSEMESTERID, MODULID, TEILGEBIET, SPOID, SEMESTER, RAUM, TAG, STUNDE )
 select 
@@ -195,7 +195,7 @@ group by akadhj
         , studiengang
         , t1.SEMESTER
 	, RAUM, TAG, STUNDE -- Raum+Zeit
-^
+;
 
 insert into glkeit00_HAT ( VERANSTALTUNGSSWS, DOZENTID, LASTNAME, VERANSTALTUNGSID, TEILGEBIET, ZEITSEMESTERID, RAUM, TAG, STUNDE)
 -- Annahmen:
@@ -259,7 +259,7 @@ select	VERANSTALTUNGSSWS, DOZENTID, LASTNAME, VERANSTALTUNGSID, fach as TEILGEBI
         and s.pruefernummer = d.dozentid
 	where pruefernummer is not null 
 	and dozent is not null
-^
+;
 
 
 
@@ -279,4 +279,4 @@ select distinct
 	join glkeit00_dozent as d
 	on d.dozentid = temp.pruefernummer
 	and d.lastname = temp.dozent
-^
+;
