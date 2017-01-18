@@ -1,6 +1,0 @@
-db2 -tsf drop.sql
-db2 -tsf DDL-lecture_planner.sql
-db2 -tsf checks.sql
-db2 -tsf import-testdata.sql
-db2 connect to labor
-db2 select * from glkeit00_prof_zeitsemester order by dozentid

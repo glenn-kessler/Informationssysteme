@@ -1,0 +1,17 @@
+db2 connect to labor
+db2 -tsf drop.sql
+
+db2 -tsf create_lecture_planner.sql
+
+db2 -tsf trigger_checks.sql
+
+db2 -tsf constraints_check.sql
+
+db2 -tsf import-testdata.sql
+
+db2 -tsf report_19_deputat.sql
+db2 -tsf report_20_list-modules.sql
+db2 -tsf report_21_list-Lehrbeauftragte.sql
+db2 -tsf report_22_angebotene_dienste.sql
+db2 -tsf report_23_used_services.sql
+
