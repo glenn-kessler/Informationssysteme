@@ -1,4 +1,3 @@
---#150 Deputat
 --#SET TERMINATOR %
 
 CONNECT TO LABOR%
