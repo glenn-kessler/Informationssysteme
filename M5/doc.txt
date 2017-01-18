@@ -1,0 +1,33 @@
+-------------------------------------------------
+----- Übersicht über enthaltene Dateien:
+-------------------------------------------------
+
+mission objectives.txt			----- Enthält Zielsetzungen für das Projekt.
+requirements.txt			----- Enthält Anforderungen an das DBSystem.
+Glossar.txt				----- Enthält Erklärungen zu Begriffen sowie Einschränkungen für diese.
+
+M2_list_of_relationships.csv		----- Enthält die Auflistung aller Relationen mit ihrer Bedeutung.
+group_structure.csv			----- Enthält die Gruppenaufteilung.
+user_views.csv				----- Enthält die Userviews.
+
+lecture_planner-logical_datamodel.png	----- Abbildung des logischen Datenmodells in UML.
+lecture_planner-physical_datamodel.png	----- Abbildung des physischen Datenmodells in UML.
+
+restart_infosys_project 		----- Enthält DB2-Konsolen Code. Gibt die Reihenfolge vor, in welcher die SQL Dateien auszuführen sind.
+DDL-lecture_planner.sql			----- Enthält das DBSchema (Tabellen, Primärschlüssel, etc)
+check.sql 				----- Enthält Check Constraints, welche mögliche Spatenwerte eingrenzen.
+checks.sql				----- Enthält für Trigger.
+import-test-data.sql 			----- Enthält sql-Code um Testdaten aus Testtabellen in das DBSystem zu importieren.
+reports.sql				----- Enthält die zu generierenden Reports.
+drop.sql				----- Enthält sql-Code um sämtliche Tabellen, Trigger & Sequenzen aus der Datenbank zu entfernen.
+
+
+-------------------------------------------------
+----- Anleitung 
+-------------------------------------------------
+
+Die SQL-Dateien müssen in der Reihenfolge ausgeführt werden, wie in 'restart_infosys_project' beschrieben.
+Diese Datei enthält bereits vorgefertigte DB2 Konsolen Befehle.
+Der 1. Schritt (Ausführen von 'drop.sql') ist nur nötig, falls bereits Tabellen, Trigger oder Sequenzen erstellt wurden. Ansonsten kann dieser Befehl ausgelassen werden.
+
+Zum Erzeugen der Reports muss der jeweilige sql-Code aus 'reports.sql' kopiert und seperat ausgeführt werden. Um Parameter zu spezifizieren muss das jeweilige Parameter in der WHERE-clause geändert werden.
