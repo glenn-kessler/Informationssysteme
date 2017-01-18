@@ -1,23 +1,24 @@
 Deliverables of the entire project
 Database planning
--	documentation of group structure
--	mission statement & mission objectives
--	time schedule
+-	documentation of group structure - done
+-	mission statement & mission objectives - done
+-	time schedule - ?
 System definition
--	user views
+-	user views - done
 Requirements collection and analysis
--	list of requirements (structured, sorted, numbered)
+-	list of requirements (structured, sorted, numbered) - done
 Database design
--	conceptual data model on paper (Chen notation)
+-	conceptual data model on paper (Chen notation) - done?
 -	list of all relevant entities and relationships for each user view
--	conceptual data model in CASE-tool
--	logical data model
+-	conceptual data model in CASE-tool - done
+-	logical data model - done
 -	proof that all relations are in BCNF or an explanation why not
 Implementation
--	all SQL code
--	MS Access project
+-	all SQL code - done?
+-	MS Access project - not needed
 Data conversion and loading
--	SQL-code for data loading
+-	SQL-code for data loading - done
 Testing
 -	list of positive and failed test cases
+
 -	product with required functionality and a minimality of bugs
