@@ -1,33 +1,33 @@
 -------------------------------------------------
------ Übersicht über enthaltene Dateien:
+----- Ãœbersicht Ã¼ber enthaltene Dateien:
 -------------------------------------------------
 
-mission objectives.txt			----- Enthält Zielsetzungen für das Projekt.
-requirements.txt			----- Enthält Anforderungen an das DBSystem.
-Glossar.txt				----- Enthält Erklärungen zu Begriffen sowie Einschränkungen für diese.
+mission objectives.txt			----- EnthÃ¤lt Zielsetzungen fÃ¼r das Projekt.
+requirements.txt			----- EnthÃ¤lt Anforderungen an das DBSystem.
+Glossar.txt				----- EnthÃ¤lt ErklÃ¤rungen zu Begriffen sowie EinschrÃ¤nkungen fÃ¼r diese.
 
-M2_list_of_relationships.csv		----- Enthält die Auflistung aller Relationen mit ihrer Bedeutung.
-group_structure.csv			----- Enthält die Gruppenaufteilung.
-user_views.csv				----- Enthält die Userviews.
+M2_list_of_relationships.csv		----- EnthÃ¤lt die Auflistung aller Relationen mit ihrer Bedeutung.
+group_structure.csv			----- EnthÃ¤lt die Gruppenaufteilung.
+user_views.csv				----- EnthÃ¤lt die Userviews.
 
 lecture_planner-logical_datamodel.png	----- Abbildung des logischen Datenmodells in UML.
 lecture_planner-physical_datamodel.png	----- Abbildung des physischen Datenmodells in UML.
 
-restart_infosys_project 		----- Enthält DB2-Konsolen Code. Gibt die Reihenfolge vor, in welcher die SQL Dateien auszuführen sind.
-DDL-lecture_planner.sql			----- Enthält das DBSchema (Tabellen, Primärschlüssel, etc)
-check.sql 				----- Enthält Check Constraints, welche mögliche Spatenwerte eingrenzen.
-checks.sql				----- Enthält für Trigger.
-import-test-data.sql 			----- Enthält sql-Code um Testdaten aus Testtabellen in das DBSystem zu importieren.
-reports.sql				----- Enthält die zu generierenden Reports.
-drop.sql				----- Enthält sql-Code um sämtliche Tabellen, Trigger & Sequenzen aus der Datenbank zu entfernen.
+restart_infosys_project 		----- EnthÃ¤lt DB2-Konsolen Code. Gibt die Reihenfolge vor, in welcher die SQL Dateien auszufÃ¼hren sind.
+DDL-lecture_planner.sql			----- EnthÃ¤lt das DBSchema (Tabellen, PrimÃ¤rschlÃ¼ssel, etc)
+check.sql 				----- EnthÃ¤lt Check Constraints, welche mÃ¶gliche Spatenwerte eingrenzen.
+checks.sql				----- EnthÃ¤lt fÃ¼r Trigger.
+import-test-data.sql 			----- EnthÃ¤lt sql-Code um Testdaten aus Testtabellen in das DBSystem zu importieren.
+reports.sql				----- EnthÃ¤lt die zu generierenden Reports.
+drop.sql				----- EnthÃ¤lt sql-Code um sÃ¤mtliche Tabellen, Trigger & Sequenzen aus der Datenbank zu entfernen.
 
 
 -------------------------------------------------
 ----- Anleitung 
 -------------------------------------------------
 
-Die SQL-Dateien müssen in der Reihenfolge ausgeführt werden, wie in 'restart_infosys_project' beschrieben.
-Diese Datei enthält bereits vorgefertigte DB2 Konsolen Befehle.
-Der 1. Schritt (Ausführen von 'drop.sql') ist nur nötig, falls bereits Tabellen, Trigger oder Sequenzen erstellt wurden. Ansonsten kann dieser Befehl ausgelassen werden.
+Die SQL-Dateien mÃ¼ssen in der Reihenfolge ausgefÃ¼hrt werden, wie in 'restart_infosys_project' beschrieben.
+Diese Datei enthÃ¤lt bereits vorgefertigte DB2 Konsolen Befehle.
+Der 1. Schritt (AusfÃ¼hren von 'drop.sql') ist nur nÃ¶tig, falls bereits Tabellen, Trigger oder Sequenzen erstellt wurden. Ansonsten kann dieser Befehl ausgelassen werden.
 
-Zum Erzeugen der Reports muss der jeweilige sql-Code aus 'reports.sql' kopiert und seperat ausgeführt werden. Um Parameter zu spezifizieren muss das jeweilige Parameter in der WHERE-clause geändert werden.
+Zum Erzeugen der Reports muss der jeweilige sql-Code aus 'reports.sql' kopiert und separat ausgefÃ¼hrt werden. Um Parameter zu spezifizieren muss das jeweilige Parameter in der WHERE-clause geÃ¤ndert werden.
