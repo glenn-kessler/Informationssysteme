@@ -7,7 +7,7 @@ db2 -tsf trigger_checks.sql
 
 db2 -tsf constraints_check.sql
 
-db2 -tsf import-testdata.sql
+db2 -tsf import_testdata.sql
 
 db2 -tsf report_19_deputat.sql
 db2 -tsf report_20_list-modules.sql
