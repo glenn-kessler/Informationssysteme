@@ -6,24 +6,23 @@ mission objectives.txt			----- Enthält Zielsetzungen für das Projekt.
 requirements.txt			----- Enthält Anforderungen an das DBSystem.
 Glossar.txt				----- Enthält Erklärungen zu Begriffen sowie Einschränkungen für diese.
 
-M2_list_of_relationships.csv		----- Enthält die Auflistung aller Relationen mit ihrer Bedeutung.
 group_structure.csv			----- Enthält die Gruppenaufteilung.
 user_views.csv				----- Enthält die Userviews.
 
 lecture_planner-logical_datamodel.png	----- Abbildung des logischen Datenmodells in UML.
 lecture_planner-physical_datamodel.png	----- Abbildung des physischen Datenmodells in UML.
 
-restart_infosys_project 		----- Enthält DB2-Konsolen Code. Gibt die Reihenfolge vor, in welcher die SQL Dateien auszuführen sind.
-DDL-lecture_planner.sql			----- Enthält das DBSchema (Tabellen, Primärschlüssel, etc)
+restart.txt 		----- Enthält DB2-Konsolen Code. Gibt die Reihenfolge vor, in welcher die SQL Dateien auszuführen sind.
+create_lecture_planner.sql			----- Enthält das DBSchema (Tabellen, Primärschlüssel, etc)
 constraints_check.sql 				----- Enthält Check Constraints, welche mögliche Spatenwerte eingrenzen.
 trigger_checks.sql				----- Enthält für Trigger.
-import-test-data.sql 			----- Enthält sql-Code um Testdaten aus Testtabellen in das DBSystem zu importieren.
+drop.sql				----- Enthält sql-Code um sämtliche Tabellen, Trigger & Sequenzen aus der Datenbank zu entfernen.
+import_testdata.sql 			----- Enthält sql-Code um Testdaten aus Testtabellen in das DBSystem zu importieren.
 report_19_deputat.sql				----- Enthält Code für den Deputats Report.
 report_20_list-modules.sql            ----- Enthält Code für den Report zum Anzeigen aller Module eines Studiengangs.
 report_21_list-Lehrbeauftragte        ----- Enthält Code für den Report zum Anzeigen der Externen Lehrbeauftragten.
 report_22_angebotene_dienste.sql      ----- Enthält Code für den Report zum Anzeigen von für andere Fakultäten angebotene Dienste.
-report_23_used_services.sql           ----- Enthält Code für den Report zum Anzeigen von externen Diensten die eine Fakultät annimmt.   
-drop.sql				----- Enthält sql-Code um sämtliche Tabellen, Trigger & Sequenzen aus der Datenbank zu entfernen.
+report_23_used_services.sql           ----- Enthält Code für den Report zum Anzeigen von externen Diensten die eine Fakultät annimmt.
 
 
 -------------------------------------------------
@@ -45,4 +44,4 @@ Die SQL-Dateien müssen in der Reihenfolge ausgeführt werden, wie in 'restart.t
 Diese Datei enthält bereits vorgefertigte DB2 Konsolen Befehle.
 Der 1. Schritt (Ausführen von 'drop.sql') ist nur nötig, falls bereits Tabellen, Trigger oder Sequenzen erstellt wurden. Ansonsten kann dieser Befehl ausgelassen werden.
 
-Zum Erzeugen der Reports muss die jeweilige .sql Datei ausgeführt werden. Die Befehle hierfür befinden sich ebenfalls in 'restart.sql'. Um Parameter zu spezifizieren muss das jeweilige Parameter in der WHERE-clause geändert werden.
+Zum Erzeugen der Reports muss die jeweilige .sql Datei ausgeführt werden (siehe Liste der enthaltenen Dateien). Um Parameter zu spezifizieren muss das jeweilige Parameter in der WHERE-clause geändert werden.
