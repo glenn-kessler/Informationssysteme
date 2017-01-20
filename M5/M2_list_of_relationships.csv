@@ -1,7 +1,0 @@
-Entity Name,Multiplicity,Relationship,Multiplicity,Entity Name
-Dozent,*,hat,*,Veranstaltung
-Dozent,*,ist_verantwortlich,Ü,Modul_SPO
-Prof,1,erfuellt,0..*,Aufgabe
-Prof,1,Prof_Zeitsemester,1,Zeitsemester
-LB,1,steht_in_Beziehung_mit,1,Zeitsemester
-SPO,1,besteht aus,1..*,Modul

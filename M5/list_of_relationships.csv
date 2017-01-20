@@ -1,0 +1,14 @@
+Entity Name,Kardinalität,Relation,Kardinalität,Entity Name
+Dozent,*,hat,*,Veranstaltung
+Dozent,*,ist_verantwortlich,*,Modul_SPO
+Dozent,*,Dozent_Fakultät,1,Fakultät
+Prof,1,Aufgaben_ProfID,0..*,Aufgaben
+Prof,1,Prof_Zeitsemester,1,Zeitsemester
+LB,1,LB_Zeitsemester,1,Zeitsemester
+SPO,1,Get_SPOID,1..*,Modul
+SPO,*,SPO_Fakultät,1,Fakultät
+Aufgaben,1,Aufgaben_Zeitsemester,1..*,Zeitsemester
+Modul_SPO,1..*,SPO_ModulID,1,Modul
+Modul_SPO,1..*,Modul_SPO,1,SPO
+Veranstaltung,*,Veranstaltung_Zeitsemester,1,Zeitsemester
+Veranstaltung,1..*,Veranstaltung_Modulelement,1,Modul_SPO
