@@ -7,11 +7,12 @@ requirements.txt			----- Enthält Anforderungen an das DBSystem.
 
 group_structure.csv			----- Enthält die Gruppenaufteilung.
 user_views.csv				----- Enthält die Userviews.
-list_of_entities        ----- Enthält eine Beschreibung aller Entitäten.
-list_of_relationships     ----- Enthält eine Liste aller Relationen.
+list_of_entities.csv        ----- Enthält eine Beschreibung aller Entitäten.
+list_of_relationships.csv     ----- Enthält eine Liste aller Relationen.
 
-lecture_planner-logical_datamodel.png	----- Abbildung des logischen Datenmodells in UML.
-lecture_planner-physical_datamodel.png	----- Abbildung des physischen Datenmodells in UML.
+lecture_planner-logical_datamodel.png	----- Abbildung des logischen Datenmodells in Crawfoot.
+lecture_planner-physical_datamodel.png	----- Abbildung des physischen Datenmodells in Crawfoot.
+lecture_planner_conceptual_chen.png	----- Abbildung des konzeptionellen Datenmodells in Chen.
 
 restart.txt 		----- Enthält DB2-Konsolen Code. Gibt die Reihenfolge vor, in welcher die SQL Dateien auszuführen sind.
 create_lecture_planner.sql			----- Enthält das DBSchema (Tabellen, Primärschlüssel, etc)
