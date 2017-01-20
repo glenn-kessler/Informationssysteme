@@ -8,6 +8,8 @@ Glossar.txt				----- Enthält Erklärungen zu Begriffen sowie Einschränkungen f
 
 group_structure.csv			----- Enthält die Gruppenaufteilung.
 user_views.csv				----- Enthält die Userviews.
+list_of_entities        ----- Enthält eine Beschreibung aller Entitäten.
+list_of_relationships     ----- Enthält eine Liste aller Relationen.
 
 lecture_planner-logical_datamodel.png	----- Abbildung des logischen Datenmodells in UML.
 lecture_planner-physical_datamodel.png	----- Abbildung des physischen Datenmodells in UML.
