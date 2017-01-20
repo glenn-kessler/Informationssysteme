@@ -1,0 +1,15 @@
+Entity Name,Beschreibung
+Dozent,"Angestellter der Hochschule, welcher einer 
+Fakultät angehört."
+Prof,"Ein Professor. Eine Spezialisierung  eines Dozenten, 
+Welcher zusätzlich weitere Aufgaben übernehmen kann."
+LB,"Ein Lehrbeauftragter. Eine Spezialisierung eines Dozenten, 
+Welcher keine zusätzlichen Aufgaben übernehmen kann."
+Fakultät,Eine Fakultät der Hochschule.
+SPO,"Ein Studiengang, welcher einer bestimmten Fakultät angehört."
+Modul,"Ein abstraktes Fach mit Teilgebiet, welches einer SPO angehört."
+Modul_SPO,"Ein Fach mit Teilgebiet und SWS, welches einer SPO angehört."
+Veranstaltung,"Eine wöchentliche Lehreinheit (Vorlesung, Labor, etc.),
+Welche ein Modul in einem bestimmten Zeitsemester darstellt. "
+Zeitsemester,"Eine Zeiteinheit, welche ein bestimmtes Semester identifiziert."
+Aufgaben,"Eine Tätigkeit, welche Professoren in einem bestimmten Zeitsemester erfüllen."
