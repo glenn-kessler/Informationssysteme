@@ -4,7 +4,6 @@
 
 mission objectives.txt			----- Enthält Zielsetzungen für das Projekt.
 requirements.txt			----- Enthält Anforderungen an das DBSystem.
-Glossar.txt				----- Enthält Erklärungen zu Begriffen sowie Einschränkungen für diese.
 
 group_structure.csv			----- Enthält die Gruppenaufteilung.
 user_views.csv				----- Enthält die Userviews.
